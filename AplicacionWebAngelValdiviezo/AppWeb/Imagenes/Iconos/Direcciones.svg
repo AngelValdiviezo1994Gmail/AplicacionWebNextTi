@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.279 33.124">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #fff;
+      }
+
+      .cls-1 {
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_349" data-name="Group 349" transform="translate(-513.807 -427.852)">
+    <g id="Group_348" data-name="Group 348">
+      <g id="Group_332" data-name="Group 332" transform="translate(514.922 430.122)">
+        <path id="Path_401" data-name="Path 401" class="cls-1" d="M2947,1540.5l18.434,20.705Z" transform="translate(-2928.391 -1540.503)"/>
+        <path id="Path_402" data-name="Path 402" class="cls-1" d="M2965.609,1540.5,2947,1561.208Z" transform="translate(-2947 -1540.503)"/>
+      </g>
+    </g>
+    <g id="Group_338" data-name="Group 338" transform="translate(520.147 429.351)">
+      <path id="Path_403" data-name="Path 403" class="cls-1" d="M2919,1569v13.89h26.5V1569" transform="translate(-2919 -1552.766)"/>
+      <g id="Rectangle_172" data-name="Rectangle 172" class="cls-1" transform="translate(5.764 23.048)">
+        <rect class="cls-3" width="15.651" height="7.863"/>
+        <rect class="cls-4" x="1.5" y="1.5" width="12.651" height="4.863"/>
+      </g>
+      <path id="Path_404" data-name="Path 404" class="cls-1" d="M2954.812,1508.734v-4.7h4.707v9.727" transform="translate(-2938.035 -1504.033)"/>
+      <g id="Group_333" data-name="Group 333" transform="translate(8.289 8.894)">
+        <g id="Ellipse_34" data-name="Ellipse 34" class="cls-2">
+          <ellipse class="cls-3" cx="4.796" cy="4.718" rx="4.796" ry="4.718"/>
+          <ellipse class="cls-4" cx="4.796" cy="4.718" rx="3.796" ry="3.718"/>
+        </g>
+        <path id="Path_409" data-name="Path 409" class="cls-2" d="M2941.538,1510.568v8.772" transform="translate(-2936.723 -1510.27)"/>
+        <path id="Path_410" data-name="Path 410" class="cls-2" d="M2932.53,1519h9.022" transform="translate(-2932.263 -1514.282)"/>
+      </g>
+    </g>
+  </g>
+</svg>

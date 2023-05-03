@@ -1,0 +1,947 @@
+﻿/*********** INICIO REGISTRO WIZARD NO CLIENTE ***********/
+
+/*.dxgvDetailButton_Office2010Blue img {
+    background: url('../images/QuitarTelefono.svg') left top no-repeat !important;
+    width: 100% !important;
+}*/
+
+/*hasta reestructuracion de diseño en wizard*/
+/*.dxeSpinIncButton_Office2010Blue {
+    padding: 6px 4px 5px !important;
+}*/
+
+.styleContentFotoNombresWizardRegPersonas {
+    background: #ffffff;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: -3rem;
+    border-radius: 5px;
+    /*float: right;*/
+    /*border: 1px solid #009fdf;*/
+    /*top: -54px;*/
+    z-index: 1;
+    box-shadow: 0px 2px 7px rgba(0,0,0,.3);
+}
+
+
+#listaDeErroresBaseDatos{
+    padding: 0 20rem;
+}
+
+#listaDeErroresBaseDatos div {
+    border: 1px dotted #ccc;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.erroresBaseDatosCabecera {
+    padding: 10px 15px;
+    background-color: #f6c24b;
+    border-bottom: 1px solid #ccc;
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+ul.erroresBaseDatosCuerpo {
+    background-color: #fdf6e7;
+    list-style-type: circle;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin-bottom: 0px;
+    font-size: 17px;
+}
+
+.QuitarMarginbottom {
+    margin-bottom: 0px !important;
+}
+
+.line_height {
+    line-height: 20px !important;
+    
+}
+
+.margin_bottom {
+    margin-bottom: 7px !important
+}
+
+.margin_bottom2px {
+    margin-bottom: 2px !important
+}
+
+.btnDomicilioStyle, .btnTrabajoStyle {
+    height: 35px;
+    width: 100px;
+    background-color: transparent;
+    border-color: #b8b8b8;
+    border-radius: 5px;
+    border-width: 3px;
+    border-style: solid;
+    outline: none;
+    color: #b8b8b8;
+}
+
+.btnDomicilioStyleMarcoAzul, .btnTrabajoStyleMarcoAzul {
+    height: 35px;
+    width: 100px;
+    background-color: transparent;
+    border-color: #009fe5;
+    border-radius: 5px;
+    border-width: 3px;
+    border-style: solid;
+    outline: none;
+    color: #009fe5;
+}
+
+.OcultarCajaDeTexto {
+    display: none !important;
+}
+
+.MostrarContenido {
+    display: block !important;
+}
+
+
+.StyleReportePCC {
+    left: -246px !important;
+    width: 425px;
+    border: 0px !important;
+}
+
+
+#btnTrabajo:focus {
+    height: 35px;
+    width: 100px;
+    background-color: transparent;
+    border-color: #009fe5;
+    border-radius: 5px;
+    border-width: 3px;
+    border-style: solid;
+    outline: none;
+    color: #009fe5;
+}
+
+.ControlInfOtroPais {
+    padding-top: calc(-0.625rem + 1px);
+    padding-bottom: calc(-0.625rem + 1px);
+    margin-bottom: 0;
+    font-size: inherit;
+    line-height: 1.2;
+}
+
+.tituloRestriccion {
+    font-weight: 500;
+}
+
+strong {
+    font-weight: 500;
+}
+
+a, a:hover, a:focus {
+    color: #009FDF;
+    text-decoration: none;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+h1, h2 {
+    margin-top: 10px;
+    font-size: 38px;
+    font-weight: 100;
+    color: #555;
+    line-height: 50px;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 300;
+    color: #555;
+    line-height: 30px;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 300;
+    color: #555;
+    line-height: 26px;
+}
+
+img {
+    /*max-width: 100%;*/
+}
+
+.circuloBtnSalir {
+    padding-left: 1.5rem;
+    /*border: 1px solid #87d1fd;
+    background-color: #87d1fd;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin-left: 10px*/;
+}
+
+::-moz-selection {
+    background: #009FDF;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #009FDF;
+    color: #fff;
+    text-shadow: none;
+}
+
+
+/***** Top menu *****/
+
+.navbar {
+    padding-top: 10px;
+    background: #333;
+    background: rgba(51, 51, 51, 0.3);
+    border: 0;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+    .navbar.navbar-no-bg {
+        background: none;
+    }
+
+ul.navbar-nav {
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar-inverse ul.navbar-nav li {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+    .navbar-inverse ul.navbar-nav li .li-text {
+        opacity: 0.8;
+    }
+
+    .navbar-inverse ul.navbar-nav li a {
+        display: inline;
+        padding: 0;
+        color: #fff;
+    }
+
+        .navbar-inverse ul.navbar-nav li a:hover {
+            color: #fff;
+            opacity: 1;
+            border-bottom: 1px dotted #fff;
+        }
+
+        .navbar-inverse ul.navbar-nav li a:focus {
+            color: #fff;
+            outline: 0;
+            opacity: 1;
+            border-bottom: 1px dotted #fff;
+        }
+
+    .navbar-inverse ul.navbar-nav li .li-social a {
+        margin: 0 5px;
+        font-size: 28px;
+        vertical-align: middle;
+    }
+
+        .navbar-inverse ul.navbar-nav li .li-social a:hover,
+        .navbar-inverse ul.navbar-nav li .li-social a:focus {
+            border: 0;
+            color: #009FDF;
+        }
+
+.navbar-brand {
+    width: 162px;
+    background: url(../img/logo.png) left center no-repeat;
+    text-indent: -99999px;
+}
+
+
+/***** Top content *****/
+
+.top-content {
+    padding: 40px 0 170px 0;
+}
+
+    .top-content .text {
+        color: #fff;
+    }
+
+        .top-content .text h1 {
+            color: #fff;
+        }
+
+    .top-content .description {
+        margin: 20px 0 10px 0;
+    }
+
+        .top-content .description p {
+            opacity: 0.8;
+        }
+
+        .top-content .description a {
+            color: #fff;
+        }
+
+            .top-content .description a:hover,
+            .top-content .description a:focus {
+                border-bottom: 1px dotted #fff;
+            }
+
+.form-box {
+    padding-top: 40px;
+}
+
+.f1 {
+    padding: 25px;
+    background: #fff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+    .f1 h3 {
+        margin-top: 0;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+
+.f1-steps {
+    /*overflow: hidden;*/
+    position: relative;
+    margin-top: 34px;
+}
+
+
+.f1-progress {
+    position: absolute;
+    top: 18px;
+    left: 50px;
+    width: 84%;
+    height: 4px;
+    background: #ddd;
+}
+
+.f1-progress-line {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    height: 4px;
+    background: #009FDF;
+}
+
+.f1-step {
+    /*position: relative;
+    float: left;
+    width: 33.333333%;
+    padding: 0 5px;
+    text-align: center;*/
+    position: relative;
+    float: left;
+    width: 10.333333%;
+    padding: 0 5px;
+    text-align: center;
+}
+
+.f1-step-icon {
+    display: inline-block;
+    /*width: 85px;
+    height: 85px;*/
+    width: 60px;
+    height: 60px;
+    margin-top: -12px;
+    background: #A7A7A7;
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.img-wizard {
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+.img-wizar-Ajuste {
+    width: 36px;
+    height: 49px;
+    margin-top: 15px;
+}
+
+.img-Wizar-Default {
+    /*width: 35px;
+    height: 55px;
+    margin-top: 15px;*/
+    /* top: 136px; esto ya estaba comentado*/
+    /*width: 50px;
+    height: 55px;
+    margin-top: 33px;*/
+    width: 36px;
+    height: 49px;
+    margin-top: 13px;
+}
+
+.f1-step.activated .f1-step-icon {
+    background: #009FDF;
+    border: 1px solid #009FDF;
+    color: #009FDF;
+    line-height: 38px;
+}
+
+.f1-step.active .f1-step-icon {
+    /*width: 90px;
+    height: 90px;
+    margin-top: -20px;
+    background: #009FDF;
+    font-size: 22px;
+    line-height: 48px;*/
+    /*width: 124px;
+    height: 124px;
+    margin-top: -35px;
+    background: #009FDF;
+    font-size: 22px;
+    line-height: 48px;*/
+    width: 60px;
+    height: 60px;
+    margin-top: -12px;
+    background: #009FDF;
+    font-size: 22px;
+    line-height: 48px;
+}
+
+.f1-step p {
+    color: #ccc;
+}
+
+.f1-step.activated p {
+    color: #009FDF;
+}
+
+.f1-step.active p {
+    color: #009FDF;
+}
+
+.f1 fieldset {
+    display: none;
+    text-align: left;
+}
+
+.Visible {
+    display: block;
+    cursor: pointer;
+    margin-left: 0.7rem;
+}
+
+.Invisible {
+    display: none;
+    cursor: none;
+    margin-left: 0.7rem;
+}
+
+.PositionWizard {
+    margin: auto auto auto auto !important
+}
+
+.padding-Left {
+    padding-left: 24px;
+}
+
+.PositionFrom {
+    margin: auto auto auto 93px !important;
+    width: 1350px;
+}
+
+.btn-previous {
+    float: left !important;
+}
+
+.text-Right {
+    text-align: right !important;
+}
+
+.Col-Form-Ajuste {
+    flex: 35 2 55.666667%;
+    max-width: 58.666667%;
+    padding-bottom: 5px;
+}
+
+.TextBox-from {
+    display: block;
+    font-size: 1rem;
+    line-height: 11.5;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #b7b3b3;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin: 0;
+    padding-left: 4px;
+    /*width: 250px;*/
+    padding-top: 3px;
+    /* width: 64% !important; */
+}
+
+.TextBox-SitLab {
+    display: block;
+    font-size: 1rem;
+    line-height: 11.5;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #b7b3b3;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin: 0;
+    padding-left: 4px;
+    width: auto;
+    padding-top: 3px;
+}
+
+/*Inicio Justificar textos en labels de informacion laboral wizard */
+.justificado {
+    padding-right: 2.5rem;
+}
+    .justificado label {
+        text-align: justify;
+    }
+
+/*Fin Justificar textos en labels de informacion laboral wizard*/
+
+.imgFotoWizard {
+    width: 11rem;
+    height: 12rem;
+}
+
+.redondearImagen img {
+    border-radius: 50%;
+    margin: 0.8rem 0rem;
+}
+
+.ColorRegistro {
+    color: #005EB8;
+}
+
+.frmMaxWidthHeight {
+    width: 100%;
+    height: 100%;
+}
+
+.PositionButton {
+    width: 103%;
+    position: absolute;
+    top: 43px;
+    margin: 0px 0px 0px -40px !important;
+    padding-right: 62px;
+    padding-left: 37px;
+    /*width: 107%;
+    position: absolute;
+    top: 43px;
+    margin: 0px 0px 0px -57px !important;
+    padding-right: 62px;
+    padding-left: 37px;*/
+    /*width: 114%;
+    position: absolute;
+    top: 40px;
+    margin: 0px 0px 0px -94px !important;
+    padding-right: 62px;
+    padding-left: 37px;*/
+    /*padding-left: 41px; esto ya estaba comentado*/
+}
+
+.PositionButtonConDoc {
+    width: 103%;
+    position: absolute;
+    top: 43px;
+    margin: 0px 0px 0px -40px !important;
+    padding-right: 62px;
+    padding-left: -1px;
+}
+
+.PositionButtonCompleto {
+    width: 103%;
+    position: absolute;
+    top: 43px;
+    margin: 0px 0px 0px 68px !important;
+    padding-right: 62px;
+    padding-left: 37px;
+}
+
+.PaddingLeft-08rem{
+    padding-left: 0.8rem;
+}
+
+.SalirWizard {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    /* margin-top: 34px; */
+    background: #D35555;
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin: 52px 0px 0px 154px !important;
+}
+
+.SalirWizardConDoc {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    /* margin-top: 34px; */
+    background: #D35555;
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin: 50px 0px 0px 0px !important;
+}
+
+.AlinearTextoAlaDerecha {
+    text-align-last: right;
+}
+
+.MaxHeigtPlanilla94 {
+    max-height: 94%;
+}
+
+.MaxHeigtPlanilla94_5 {
+    max-height: 94.5%;
+}
+
+.z_Index{
+    z-index: 1000 !important;
+}
+
+.PositionDoc {
+    width: 93%;
+    position: absolute;
+    /* position: unset; esto ya estaba comentado*/
+    /* padding-right: 20px; esto ya estaba comentado*/
+    top: 53px;
+    /* padding-top: 100px; esto ya estaba comentado*/
+    /*margin: 0px 0px 0px 25px !important;*/
+    /* background-color: white; esto ya estaba comentado*/
+    padding-right: 20px;
+    /* padding-left: 41px; esto ya estaba comentado*/
+}
+
+
+.f1-buttons {
+    text-align: right;
+}
+
+.f1 .input-error {
+    border-color: #009FDF;
+}
+
+.stylefotobuscador {
+    border-radius: 94px;
+    width: 47px;
+    height: 61px;
+    cursor: pointer;
+}
+
+/***** Media queries *****/
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+
+    .navbar {
+        padding-top: 0;
+    }
+
+        .navbar.navbar-no-bg {
+            background: #333;
+            background: rgba(51, 51, 51, 0.9);
+        }
+
+    .navbar-brand {
+        height: 60px;
+        margin-left: 15px;
+    }
+
+    .navbar-collapse {
+        border: 0;
+    }
+
+    .navbar-toggle {
+        margin-top: 12px;
+    }
+
+    .top-content {
+        padding: 40px 0 110px 0;
+    }
+}
+
+@media (max-width: 415px) {
+
+    h1, h2 {
+        font-size: 32px;
+    }
+
+    .f1 {
+        padding-bottom: 20px;
+    }
+
+    .f1-buttons button {
+        margin-bottom: 5px;
+    }
+}
+/* Retina-ize images/icons */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min--moz-device-pixel-ratio: 2), only screen and ( -o-min-device-pixel-ratio: 2/1), only screen and ( min-device-pixel-ratio: 2), only screen and ( min-resolution: 192dpi), only screen and ( min-resolution: 2dppx) {
+
+
+    .navbar-brand {
+        background-image: url(../img/logo@2x.png) !important;
+        background-repeat: no-repeat !important;
+        background-size: 162px 36px !important;
+    }
+}
+
+.widtHeightTextArea {
+    width: 330px !important;
+    height: 80px !important;
+}
+/*********** FIN REGISTRO WIZARD NO CLIENTE ***********/
+
+/*********DIGITALIZACION DOCUMENTOS************/
+
+.contenedorVisorDocsConsultaPN {
+    padding: 25px;
+    /*background: #F2F2F2;*/
+    /*border: 2px solid;*/
+}
+
+.dropZoneExternal > div,
+.dropZoneExternal > embed {
+    position: absolute;
+}
+
+.dropZoneExternal {
+    position: relative;
+    /*border: 1px dotted #9ca7e8 !important;*/
+    cursor: pointer;
+}
+
+.dragZoneImage {
+    width: 350px;
+    height: 350px;
+    margin: 30px 0px 0px 170px;
+}
+
+#dropZoneCI,
+#dropZonePla {
+    top: 0;
+    padding: 100px 25px;
+}
+
+.uploadControlDropZone {
+    display: none;
+}
+
+
+.dxucInlineDropZoneSys span {
+    color: #fff !important;
+    font-size: 10pt;
+    font-weight: normal !important;
+}
+
+.uploadControlProgressBar {
+    width: 450px !important;
+}
+
+.validationMessage {
+    padding: 0 20px;
+    text-align: center;
+}
+
+#ucDragAndDrop {
+    margin-top: 10px;
+}
+
+.pdfobject-container {
+    max-width: 100%;
+    margin: 0px;
+}
+
+#ucDragAndDropCI_Browse0.dxucBrowseButton,
+#ucDragAndDropCI_Browse0.dxucBrowseButtonHover,
+#ucDragAndDropPlanilla_Browse0.dxucBrowseButton,
+#ucDragAndDropPlanilla_Browse0.dxucBrowseButtonHover {
+    border: none;
+    background: none;
+}
+
+/******FIN DIGITALIZACION DOCUMENTOS********/
+
+/*Datos del Conyuge*/
+.contentDatosConyuge {
+    /*estilo fijo cuando tiene conyuge*/
+    border-right: 1px solid #DDDFE2;
+    margin: 0px 48px 0px 48px !important;
+    border: 1px solid #E7F3F8;
+    background: #E7F3F8;
+    max-width: 417px !important;
+    max-height: 495px !important;
+}
+
+.contentInfoOtroPais {
+    border-right: 1px solid #DDDFE2;
+    border: 1px solid #E7F3F8;
+    background: #E7F3F8;
+    max-width: 417px !important;
+    height: auto;
+   
+}
+
+.styleInfoBasicaTieneConyuge {
+    /*border-right: 1px solid #DDDFE2;*/
+    margin: 0px 0px 0px 179px !important;
+    /*border: 1px solid #E7F3F8;*/
+    /*background: #E7F3F8;*/
+    max-width: 417px !important;
+}
+
+.styleInfoBasicaNoTieneConyuge {
+    /*border-right: 1px solid #DDDFE2;*/
+    margin: 0px 118px 0px 384px !important;
+    /*border: 1px solid #E7F3F8;*/
+    /*background: #E7F3F8;*/
+    max-width: 417px !important;
+}
+
+.styleInfoBasica {
+    border-right: 1px solid #DDDFE2;
+    border: 1px solid #E7F3F8;
+    background: #E7F3F8;
+}
+
+
+/*Asesor Comercial*/
+.styleAsesorComercial {
+    border-right: 1px solid #DDDFE2;
+    border: 1px solid #E7F3F8;
+    background: #E7F3F8; 
+    max-width: 417px !important;
+    top: 6px;
+}
+
+/******INICIO MESAJES DE VALIDACIONES DE BASE********/
+
+/* Estilo personalizado para mensaje de validaciones por campos en el Registro PN*/
+.bs-tooltip-bottom .arrow::before, .bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+    border-bottom-color: #f7e3e3 !important;
+}
+
+.textColorNegro {
+    color: #0c0c0c;
+}
+
+/******FIN MESAJES DE VALIDACIONES DE BASE********/
+
+/******INICIO NOTIFICACIONES********/
+
+.btn-deshabilitado {
+    border: 0.1rem solid #707070;
+    background-color: #ffffff;
+    color: #707070;
+    width: 7.3rem;
+    margin-right: 1rem;
+    /*pointer-events: none;
+    opacity: 0.7;*/
+}
+.btn-habilitado {
+    border: 0.1rem solid #009FDF;
+    background-color: #ffffff;
+    color: #009FDF;
+    width: 7.3rem;
+    margin-right: 1rem;
+}
+.btn-seleccionado {
+    border: 0.1rem solid #009FDF;
+    color: #ffffff;
+    width: 7.3rem;
+    background-color: #009FDF;
+    margin-right: 1rem;
+}
+.btn-no-seleccionado {
+    border: 0.1rem solid #d35555;
+    background-color: #f7e3e3;
+    color: #d35555;
+    width: 7.3rem;
+    margin-right: 1rem;
+    /*pointer-events: none;
+    opacity: 0.7;*/
+}
+
+.btn-correo-deshabilitado {
+    border: 0.1rem solid #707070;
+    background-color: #ffffff;
+    color: #707070;
+    width: 7.5rem;
+    margin-right: 1rem;
+    white-space: normal;
+    height: 42px;
+    line-height: 17px;
+    padding: 0rem 0.75rem;
+    /*pointer-events: none;
+    opacity: 0.7;*/
+}
+.btn-correo-habilitado {
+    border: 0.1rem solid #009FDF;
+    background-color: #ffffff;
+    color: #009FDF;
+    width: 7.5rem;
+    margin-right: 1rem;
+    white-space: normal;
+    height: 42px;
+    line-height: 17px;
+    padding: 0rem 0.75rem;
+}
+.btn-correo-seleccionado {
+    border: 0.1rem solid #009FDF;
+    background-color: #009FDF;
+    color: #ffffff;
+    width: 7.5rem;
+    margin-right: 1rem;
+    white-space: normal;
+    height: 42px;
+    line-height: 17px;
+    padding: 0rem 0.75rem;
+}
+.btn-correono-seleccionado {
+    border: 0.1rem solid #d35555;
+    background-color: #f7e3e3;
+    color: #d35555;
+    width: 7.5rem;
+    margin-right: 1rem;
+    white-space: normal;
+    height: 42px;
+    line-height: 17px;
+    padding: 0rem 0.75rem;
+    /*pointer-events: none;
+    opacity: 0.7;*/
+}
+/******FIN NOTIFICACIONES********/

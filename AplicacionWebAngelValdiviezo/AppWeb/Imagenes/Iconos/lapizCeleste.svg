@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58" viewBox="0 0 58 58">
+  <defs>
+    <filter id="Elipse_22" x="0" y="0" width="58" height="58" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_2138" data-name="Grupo 2138" transform="translate(-175 -230)">
+    <g transform="matrix(1, 0, 0, 1, 175, 230)" filter="url(#Elipse_22)">
+      <circle id="Elipse_22-2" data-name="Elipse 22" cx="20" cy="20" r="20" transform="translate(9 6)" fill="#009fdf"/>
+    </g>
+    <path id="Trazado_1030" data-name="Trazado 1030" d="M23.811,5.953a17.706,17.706,0,0,1-1.329,1.687q-6.637,6.7-13.354,13.354a3.928,3.928,0,0,1-1.587.893c-1.448.414-2.9.807-4.862,1.325-.556.147-1.617.423-2.678.7.417-1.746.913-3.492,1.23-5.278A10.2,10.2,0,0,1,4.544,12.9c3.988-3.79,7.8-7.758,11.707-11.647A16.559,16.559,0,0,1,17.858,0h.992a16,16,0,0,1,4.961,4.961ZM8.175,20.358q5.536-5.536,11.012-10.973L17.155,7.352l-2.591-2.61c-3.73,3.631-7.441,7.282-11.112,10.893ZM21.013,7.917c.456-.516.893-1.032,1.349-1.548a1.274,1.274,0,0,0-.02-1.925c-.575-.6-1.151-1.171-1.746-1.746-2.262-2.242-2.341-2.242-4.5.139a.214.214,0,0,0-.04.139C17.64,4.564,19.227,6.151,21.013,7.917ZM6.984,21.013C5.6,19.6,4.226,18.215,2.837,16.786A7.557,7.557,0,0,1,2.4,18.275c-.714,1.409-.2,2.421.972,3.234a1.186,1.186,0,0,0,.754.278C5.1,21.568,6.072,21.271,6.984,21.013Z" transform="translate(192.501 244.5)" fill="#f2f2f2" stroke="#fff" stroke-width="0.75"/>
+  </g>
+</svg>

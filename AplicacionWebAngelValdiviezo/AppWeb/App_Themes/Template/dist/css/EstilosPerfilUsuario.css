@@ -1,0 +1,1959 @@
+﻿
+
+/**********INI MENSAJES************/
+/*ini advertencia*/
+.cardAdvertencia-card {
+    border-color: #F6C24B;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.cardAdvertencia-card-header {
+    background-color: #FDF6E7;
+    border-color: #F6C24B;
+    position: relative;
+}
+
+    .cardAdvertencia-card-header .accionAdvertencia {
+        position: absolute;
+        z-index: 1;
+        background-color: #F6C24B;
+        color: white;
+        border-radius: 50%;
+        height: 65px;
+        width: 65px;
+        bottom: 6%;
+        left: 100%;
+        margin-left: -30px;
+        box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.16);
+    }
+
+.cardAdvertencia-card-img {
+    max-width: 70px;
+    min-height: 73px;
+    background-image: url(../images/alertAdvertencia.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+/*fin advertencia*/
+/*ini alerta*/
+.cardAlerta-card {
+    border-color: #D35555;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.cardAlerta-card-header {
+    background-color: #FFC1C1;
+    border-color: #D35555;
+    position: relative;
+}
+
+    .cardAlerta-card-header .accionAlerta {
+        position: absolute;
+        z-index: 1;
+        background-color: #D35555;
+        color: white;
+        border-radius: 50%;
+        height: 65px;
+        width: 65px;
+        bottom: 6%;
+        left: 100%;
+        margin-left: -30px;
+        box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.16);
+    }
+
+.cardAlerta-card-img {
+    max-width: 70px;
+    min-height: 73px;
+    background-image: url(../images/alertAlerta.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+/*fin alerta*/
+/*ini informativo*/
+.cardInformativo-card {
+    border-color: #4686e4;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.cardInformativo-card-header {
+    background-color: #dfeafa;
+    border-color: #4686e4;
+    position: relative;
+}
+
+    .cardInformativo-card-header .accionInformativo {
+        position: absolute;
+        z-index: 1;
+        background-color: #4686e4;
+        color: white;
+        border-radius: 50%;
+        height: 65px;
+        width: 65px;
+        bottom: 6%;
+        left: 100%;
+        margin-left: -30px;
+        box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.16);
+    }
+
+.cardInformativo-card-img {
+    max-width: 70px;
+    min-height: 73px;
+    background-image: url(../images/alertInformacion.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+/*fin informativo*/
+/*ini exito*/
+.cardExitoso-card {
+    border-color: #72d371;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.cardExitoso-card-header {
+    background-color: #e1efe1;
+    border-color: #72d371;
+    position: relative;
+}
+
+    .cardExitoso-card-header .accionExito {
+        position: absolute;
+        z-index: 1;
+        background-color: #72d371;
+        color: white;
+        border-radius: 50%;
+        height: 65px;
+        width: 65px;
+        bottom: 6%;
+        left: 100%;
+        margin-left: -30px;
+        box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.16);
+    }
+
+.cardExitoso-card-img {
+    max-width: 70px;
+    min-height: 73px;
+    background-image: url(../images/alertExitoso.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+/*fin exito*/
+
+/*Inicio modal de acciones clientes restrictivos */
+.solicitudAutorizacion {
+    border: 1px solid #F6C24B;
+    display: none;
+    margin-left: 30rem;
+    position: absolute;
+    z-index: 15;
+    width: 270px;
+}
+
+.cardRestriccionTitulo {
+    width: 100%;
+    color: #ffffff;
+    background-color: #F6C24B;
+    font-size: 17px;
+    padding: 0.2rem 0.5rem;
+}
+
+.cardRestriccionTextArea {
+    width: 100%;
+    height: 6rem;
+    color: #0c0c0c;
+    border: none;
+}
+
+.btnColorBlanco {
+    background-color: #ffffff;
+    padding: 0px;
+    width: 35px;
+    height: 35px;
+}
+
+    .btnColorBlanco img {
+        width: 30px;
+        height: 30px;
+    }
+/*fin modal de acciones clientes restrictivos */
+/*ini mensaje wizard*/
+.seccionMensajesWizard {
+    position: absolute;
+    padding-left: 11.5rem;
+    /* right: 23rem; */
+    top: 0;
+    /*right: -25px;
+    top: 0;*/
+}
+
+.circuloMensajeWizard {
+    width: 50px;
+    height: 50px;
+    color: white;
+    border-radius: 50%;
+    position: relative;
+}
+
+    .circuloMensajeWizard .tooltipMensajeWizard {
+        visibility: hidden;
+        position: absolute;
+        z-index: 1;
+        left: 66px;
+        background-color: #C5C5C5;
+        border-radius: 6px;
+        padding: 0px 15px;
+        text-align: center;
+        color: black;
+        margin-right: -1000px;
+    }
+
+        .circuloMensajeWizard .tooltipMensajeWizard::after {
+            content: "";
+            position: absolute;
+            top: 19%;
+            right: 100%;
+            margin-right: 0px;
+            border-width: 8px;
+            border-style: solid;
+            border-color: #C5C5C5 transparent transparent transparent;
+            transform: rotateZ(90deg);
+        }
+
+    .circuloMensajeWizard:hover .tooltipMensajeWizard {
+        visibility: visible;
+    }
+/*fin mensaje wizard*/
+/**********FIN MENSAJES************/
+/**********INI CREAR CLIENTE************/
+.colFiltroValidaIdentidad {
+    -ms-flex: 0 0 30.333333%;
+    flex: 0 0 30.333333%;
+    max-width: 30.33%;
+}
+
+.sinBorde {
+    border: none;
+    margin-bottom: 10px;
+}
+
+.conBorde {
+    border: 1px solid #009fdf;
+    margin-bottom: 10px;
+}
+
+.colorBlue {
+    color: #005EB8;
+    padding-bottom: 1.5rem;
+    padding-top: 0.5rem;
+}
+
+.estilosLabels {
+    color: #009FDF;
+    padding-bottom: 7px;
+}
+
+.colorRojoCursiva {
+    color: red;
+    font-style: italic;
+}
+
+.bgColorCian {
+    background-color: #E7F3F8;
+    height: 27rem;
+    padding: 0.6rem 1.4rem;
+}
+
+.switchMostrarOcultar {
+    background-color: #f2f2f2;
+    padding: 0.8rem 1rem;
+    margin-right: 5rem;
+}
+
+/*ini Se debe de modificar el width de la clase TextBox-from para 
+  que no sea necesario modificarlo segun su id, cuando se corrija eso 
+  se pueden eliminar estos estilos*/
+#cmbTipoIdentidad {
+    width: 100% !important;
+}
+
+#txtIdentificacionAut {
+    width: 100%;
+}
+
+#txtCodigoDactilarAut {
+    width: 50%;
+}
+
+#CmbSituacionLaboral {
+    width: 95% !important;
+}
+
+#CmbActividadEconomica1 {
+    width: 95% !important;
+}
+
+#txtNombre1, #txtNombre2, #txtApellido1, #txtApellido2 {
+    width: 100% !important;
+}
+/*fin*/
+
+.onoff {
+    margin-bottom: 0;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    position: relative;
+    cursor: pointer;
+    width: 55px;
+    height: 30px;
+    line-height: 33px;
+}
+
+    .onoff label {
+        position: absolute;
+        top: 0px;
+        left: -2px;
+        width: 100%;
+        height: 94%;
+        cursor: pointer;
+        background: #b4b4b4;
+        border-radius: 20px;
+        font-weight: bold;
+        color: #FFF;
+        -webkit-transition: background 0.3s, text-indent 0.3s;
+        -moz-transition: background 0.3s, text-indent 0.3s;
+        -o-transition: background 0.3s, text-indent 0.3s;
+        transition: background 0.3s, text-indent 0.3s;
+        text-indent: 24px;
+        -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4) inset;
+        -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4) inset;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4) inset;
+    }
+
+        .onoff label:after {
+            content: 'NO';
+            display: block;
+            position: absolute;
+            top: 0px;
+            left: 4px;
+            width: 100%;
+            font-family: Linotype-DINNextLTPro-Light !important;
+            font-size: 16px !important;
+            color: #FFF;
+            text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.35);
+            z-index: 1;
+        }
+
+        .onoff label:before {
+            content: '';
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #FFF;
+            position: absolute;
+            z-index: 2;
+            top: 2px;
+            left: 2px;
+            display: block;
+            -webkit-transition: left 0.3s;
+            -moz-transition: left 0.3s;
+            -o-transition: left 0.3s;
+            transition: left 0.3s;
+            -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+            -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+        }
+
+    .onoff input:checked + label {
+        background: #009FDF;
+        text-indent: 6px;
+    }
+
+        .onoff input:checked + label:after {
+            content: 'SI';
+            color: #FFF;
+        }
+
+        .onoff input:checked + label:before {
+            left: 29px;
+        }
+
+.btnCreacionCliente {
+    width: 50px;
+    height: 50px;
+}
+
+.btnSubmitBuscaClienteDisable {
+    background: url('../images/validarOff.svg');
+    width: 50px;
+    height: 50px;
+    border: 0;
+}
+
+.btnConfirmaClienteDisable {
+    cursor: default !important;
+}
+
+.imgFotoValidacion {
+    width: 161.62px;
+    height: 208.87px;
+}
+
+.imgFirmaValidacion {
+    width: 300px;
+    height: 60px;
+}
+
+.frameIdentificacionAut {
+    height: 360px;
+    border: 1px solid #DDDFE2;
+}
+
+.heightInputValidacion {
+    height: 30px;
+}
+
+.espaciosLaterales {
+    padding-right: 95.5px;
+    padding-left: 95.5px;
+    margin-right: 89px;
+    margin-left: 89px;
+}
+
+.colInfoAut {
+    -ms-flex: 0 0 71%;
+    flex: 0 0 71%;
+    max-width: 71%;
+}
+
+.btnBuscarDactilaraut {
+    height: 38px;
+    width: 41px;
+    cursor: pointer
+}
+
+#checkBoxOkValidacion span {
+    outline: none;
+}
+
+.colImgsRegCivil {
+    -ms-flex: 0 0 30.333333%;
+    flex: 0 0 30.333333%;
+    max-width: 30.333333%;
+}
+
+#checkBoxDigitaliza span {
+    outline: none;
+}
+
+#checkBoxDigitaliza td[class='dxichTextCellSys'] label {
+    color: #000000;
+    font-size: 20px !important;
+    font-family: Linotype-DINNextLTPro-Regular !important;
+}
+/**********FIN CREAR CLIENTE************/
+
+/**********INI PEP RELACIONADO************/
+.panelCardPepPrincipal {
+    border: none !important;
+}
+
+.pagerBottomPanelPepPrincipal {
+    border: 1px solid #8ba0bc !important;
+}
+
+.cardPepPrincipal {
+    background-color: white !important;
+    border: 1px solid #DDDFE2 !important;
+    min-width: 250px;
+}
+
+.headerCardPepPrincipal {
+    background-color: #F5F6F7;
+    border-bottom: 1px solid #DDDFE2;
+}
+
+.contentImgPepPrincipal {
+    height: 328px;
+}
+
+.imgCardEmpresaDebRte {
+    width: 190px;
+    height: 210px;
+}
+
+.contentCardPepPrincipal {
+    position: relative;
+}
+
+    .contentCardPepPrincipal .infoContentCardPepPrincipal {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 80px;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+    }
+
+    .contentCardPepPrincipal:hover .infoContentCardPepPrincipal {
+        opacity: 1;
+        background-color: white;
+    }
+/**********FIN PEP RELACIONADO************/
+
+/**********INI AUTENTICA CLIENTE************/
+#checkBoxOkValidacion td[class='dxichTextCellSys'] label {
+    color: black;
+    font-size: 20px !important;
+    font-family: Linotype-DINNextLTPro-Regular !important;
+}
+
+#CmbNovedadCombo {
+    width: 62% !important;
+}
+
+.btnGuardaNovedadDisabled {
+    cursor: default !important;
+}
+
+#checkBoxOkValidacion > tbody > tr > td.dxichCellSys {
+    padding: 0px 3px 6px;
+}
+
+#observacionNovedad::-webkit-input-placeholder { /* Edge/Chrome/Opera/Safari */
+    font-style: italic !important;
+}
+
+#observacionNovedad::-moz-placeholder { /* Firefox 19+ */
+    font-style: italic !important;
+    opacity: 1;
+}
+
+#observacionNovedad:-ms-input-placeholder { /* IE 10+ */
+    font-style: italic !important;
+}
+/**********FIN AUTENTICA CLIENTE************/
+
+/**********INI INFO CLIENTE************/
+.infoDatosCliente {
+    width: 250px;
+    background-color: #F8F8F8;
+    min-height: 93.7vh;
+    height: 980px;
+}
+
+.col-segmentacionCliente {
+    -ms-flex: 0 0 54.333333%;
+    flex: 0 0 54.333333%;
+    max-width: 54.33%;
+}
+
+.foto-cliente {
+    height: 165px;
+    width: 76%;
+    margin-left: -6px;
+}
+
+.foto-cliente-sinsegmento {
+    height: 165px;
+    width: 100%;
+}
+
+.tiposegmentacion-cliente {
+    height: 165px;
+    width: 25%;
+}
+
+.imgCampana {
+    width: 16px;
+    height: 16px;
+}
+
+.tooltipMail {
+    position: relative;
+    display: inline-block;
+}
+
+    .tooltipMail .tooltiptext {
+        visibility: hidden;
+        background-color: #C5C5C5;
+        color: black;
+        text-align: center;
+        border-radius: 6px;
+        padding: 0px 15px;
+        position: absolute;
+        z-index: 1;
+        bottom: 110%;
+        left: 50%;
+        margin-left: -84px;
+    }
+
+        .tooltipMail .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 99%;
+            left: 8%;
+            margin-left: -5px;
+            border-width: 8px;
+            border-style: solid;
+            border-color: #C5C5C5 transparent transparent transparent;
+        }
+
+    .tooltipMail:hover .tooltiptext {
+        visibility: visible;
+    }
+
+.tooltipInclusion {
+    position: relative;
+    display: inline-block;
+}
+
+    .tooltipInclusion .tooltiptextInclusion {
+        visibility: hidden;
+        color: black;
+        text-align: center;
+        border-radius: 6px;
+        padding: 0px 15px;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .tooltipInclusion:hover .tooltiptextInclusion {
+        visibility: visible;
+    }
+
+/* Inicio - Cliente CRS */
+.tooltipCRS {
+    position: relative;
+    display: inline-block;
+}
+
+    .tooltipCRS .tooltiptextCRS {
+        visibility: hidden;
+        color: #000000;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 15px 0px;
+        position: absolute;
+        z-index: 1;
+        margin-left: -7.8rem;
+    }
+
+    .tooltipCRS:hover .tooltiptextCRS {
+        visibility: visible;
+    }
+
+.estiloContentCRS {
+    border-color: #009FDF;
+    text-align: left;
+    width: 40rem;
+}
+
+.estiloHeaderCRS {
+    background-color: #BCE1F0;
+    border-color: #009FDF;
+    padding: .10rem 1.0rem;
+}
+
+.imgCRS {
+    width: 1.8rem;
+    height: 1.8rem;
+    z-index: 1;
+}
+/* Fin - Cliente CRS */
+
+.imgLeftSmall-mail {
+    width: 25.62px;
+    height: 19.22px;
+    margin-left: 3px;
+}
+
+.imgLeftSmall-cel {
+    width: 17.8px;
+    height: 25.62px;
+    margin-left: 3px;
+}
+
+.imgLeftSmall-conv {
+    width: 22.87px;
+    height: 23.47px;
+    margin-left: 3px;
+}
+
+.imgLeftSmall-GrupoEconomico {
+    width: 41px;
+    height: 41px;
+    margin-left: 3px;
+}
+
+.imgLeftSmall {
+    /*width: 30px;
+    height: 25px;*/
+    width: 41px;
+    height: 41px;
+}
+
+.imgBordeFirmaLeft {
+    border: black solid 0.5px;
+    height: 78px;
+}
+
+.imgLeftFirma {
+    /*max-width: 200px !important;*/
+    width: 100%;
+    max-height: 75px;
+    height: 100%;
+    /*margin-top: 1px;
+    margin-bottom: 1px;*/
+}
+
+.headerSectionLeft {
+    background-color: #009FDF;
+    color: #FFFFFF;
+}
+
+/*.infoAsesorComercial {
+    color: #8D8F8E;
+}*/
+
+/* INI Representantes Legales Juridico */
+img[id^="imageFoto_"] {
+    height: 150px;
+    margin: auto;
+}
+
+img[id^="imageFirma_"] {
+    height: 80px;
+    margin: auto;
+}
+
+#CardViewRepresentantesLegales .dxAC {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.cardRepresentanteLegal {
+    position: relative;
+}
+
+    .cardRepresentanteLegal div > img {
+        display: block;
+        padding: 7px 0;
+    }
+
+    .cardRepresentanteLegal .info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #E6E6E6;
+        opacity: 0;
+        text-align: center;
+        transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+    }
+
+    .cardRepresentanteLegal:hover .info {
+        opacity: 1;
+    }
+
+.imgHoverRepLegal-ced {
+    width: 23.66px;
+    height: 19.16px;
+    margin-left: 25px;
+    display: inline !important;
+    padding: 0 !important;
+}
+
+.imgHoverRepLegal-cel {
+    width: 17.8px;
+    height: 25.62px;
+    margin-left: 25px;
+    display: inline !important;
+    padding: 0 !important;
+}
+
+.imgHoverRepLegal-mail {
+    width: 25.62px;
+    height: 19.22px;
+    margin-left: 25px;
+    display: inline !important;
+    padding: 0 !important;
+}
+
+/* FIN Representantes Legales Juridico */
+/**********FIN INFO CLIENTE************/
+
+/**********INI CARD PRODUCTOS************/
+.contenedor-productos {
+    background-color: #F2F0F0;
+}
+
+.imgCardProducto {
+    width: 25px;
+    height: 100%;
+}
+
+.imgCardCircleRosa {
+    position: absolute;
+    right: -10px;
+    top: -13px;
+    background: #D35555;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    width: 50px;
+    height: 50px;
+    padding: 15px 0 0 0;
+}
+
+.card-header-cargando {
+    background-color: #C5C5C5 !important;
+}
+
+.card-header-circle-cargando {
+    background-color: #C5C5C5 !important;
+    border: 1px solid #b2afaf !important;
+}
+
+.colorRojo {
+    background: #D35555 !important;
+    text-shadow: 0px 0px 0px !important;
+    color: white !important;
+    opacity: inherit;
+    border: 1px;
+    border-radius: 0.25rem;
+}
+
+.CircleBlue {
+    right: -10px;
+    top: -13px;
+    background: #009fdf;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    width: 50px;
+    height: 50px;
+    padding: 15px 0 0 0;
+}
+
+.CirclePlomo {
+    right: -10px;
+    top: -13px;
+    background: #B4B4B4;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    width: 50px;
+    height: 50px;
+    padding: 15px 0 0 0;
+}
+
+.MarzoAzul {
+    border: 1px solid #009FDF;
+}
+
+.MarzoAzul2px {
+    border: 5px solid #009FDF;
+}
+
+.img-card-tarjeta {
+    height: 25px;
+}
+
+.card-header a {
+    text-decoration: none;
+}
+
+.card-body-productos {
+    padding: 0.5rem 1rem;
+    min-height: 85px;
+}
+
+.card-footer-productos {
+    padding: 0.5rem 1rem;
+}
+
+.imgMasProducto {
+    cursor: pointer;
+    height: 100%;
+    width: 23px;
+}
+
+.mas-productos {
+    float: right;
+    margin-top: 5px;
+}
+
+.contenedor-5Cards {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+.contenedor-4Cards {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.contenedor-3Cards {
+    -ms-flex: 0 0 33%;
+    flex: 0 0 33%;
+    max-width: 33%;
+}
+
+.contenedor-2Cards {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.contenedor-1Cards {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.imgExpandirContraerCards {
+    cursor: pointer;
+    height: 100%;
+    width: 12px;
+}
+
+#collapseCards.collapsing {
+    transition: .5s ease;
+}
+/**********FIN CARD PRODUCTOS************/
+
+/**********INI CLIENTE CONYUGE DIRECCIONES************/
+.cardVertical-card {
+    border-color: #DDDFE2;
+}
+
+.cardVertical-card-header {
+    background-color: #F5F6F7;
+    border-color: #DDDFE2;
+}
+
+.cardVertical-card-body {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.cardVertical-line-height-divCol {
+    line-height: 10px;
+}
+
+.cardVertical-line-height-label {
+    line-height: 15px;
+}
+
+.cardVertical-space-etiqueta-valor {
+    margin-top: 7px;
+}
+
+.cardVertical-space-mt-etiquetaValor {
+    margin-top: 15px;
+}
+/**********FIN CLIENTE CONYUGE DIRECCIONES************/
+
+/**********INI CLIENTE JURIDICO************/
+/*.mas-perRelacionadas {
+    float: right;
+    margin-top: 3px;
+}*/
+
+tr[id^='representantesLegalesGrid_DXHeadersRow'] td:nth-child(1) td,
+tr[id^='representantesLegalesGrid_DXHeadersRow'] td:nth-child(4) td,
+tr[id^='representantesLegalesGrid_DXHeadersRow'] td:nth-child(5) td,
+tr[id^='representantesLegalesGrid_DXHeadersRow'] td:nth-child(6) td,
+tr[id^='representantesLegalesGrid_DXHeadersRow'] td:nth-child(7) td {
+    white-space: normal;
+}
+
+tr[id^='representantesLegalesGrid_DXHeadersRow'] td:nth-child(4),
+tr[id^='representantesLegalesGrid_DXHeadersRow'] td:nth-child(5),
+tr[id^='representantesLegalesGrid_DXHeadersRow'] td:nth-child(6),
+tr[id^='representantesLegalesGrid_DXHeadersRow'] td:nth-child(7) {
+    width: 10rem;
+    height: 2.5rem;
+}
+
+tr[id^='representantesLegalesGrid_DXHeadersRow'] td:nth-child(1) {
+    width: 6rem;
+    height: 2.5rem;
+}
+
+tr[id^='representantesLegalesGrid_DXDataRow'] td {
+    border-right: none !important;
+}
+
+    tr[id^='representantesLegalesGrid_DXDataRow'] td:nth-child(2),
+    tr[id^='representantesLegalesGrid_DXDataRow'] td:nth-child(3) {
+        text-align: left;
+    }
+
+tr[id^='accionistasGrid_DXHeadersRow'] td:nth-child(1) td {
+    white-space: normal;
+}
+
+tr[id^='gridPagos_DXDRow'] td:nth-child(1) {
+    padding: 5px 0;
+    border: 1px solid #E1DFDE;
+    border-right: none;
+    border-left: 1px solid #E1DFDE !important;
+}
+
+tr[id^='gridPagos_DXDRow'] td:nth-child(2) {
+    padding: 5px 0;
+    border: 1px solid #E1DFDE;
+    border-left: none;
+}
+
+tr[id^='GridGarantiasFiduciarias_DXDRow'] td:nth-child(1) {
+    padding: 5px 0;
+    border: 1px solid #E1DFDE;
+    border-right: none;
+    border-left: 1px solid #E1DFDE !important;
+}
+
+tr[id^='GridGarantiasFiduciarias_DXDRow'] td:nth-child(2) {
+    padding: 5px 0;
+    border: 1px solid #E1DFDE;
+    border-left: none;
+}
+
+
+tr[id^='GridGarantiasHipPrendarias_DXDRow'] td:nth-child(1) {
+    padding: 5px 0;
+    border: 1px solid #E1DFDE;
+    border-right: none;
+    border-left: 1px solid #E1DFDE !important;
+}
+
+tr[id^='GridGarantiasHipPrendarias_DXDRow'] td:nth-child(2) {
+    padding: 5px 0;
+    border: 1px solid #E1DFDE;
+    border-left: none;
+}
+
+tr[id^='accionistasGrid_DXHeadersRow'] td:nth-child(1),
+tr[id^='accionistasGrid_DXHeadersRow'] td:nth-child(3) {
+    width: 6rem;
+    height: 2.5rem;
+}
+
+tr[id^='accionistasGrid_DXDataRow'] td {
+    border-right: none !important;
+}
+
+    tr[id^='accionistasGrid_DXDataRow'] td:nth-child(2) {
+        text-align: left;
+    }
+/**********FIN CLIENTE JURIDICO************/
+/**********INI CUENTAS************/
+.bd-callout {
+    border: 0 solid white;
+    border-left: 8px solid #009FDF;
+    height: 30px;
+}
+
+.imgbtnPlusCtas {
+    height: 23px;
+    width: 23px;
+}
+
+.dxgvControl_Office2010Blue, .dxgvDisabled_Office2010Blue {
+    font: 15px Linotype-DINNextLTPro-Light !important;
+    border: none !important;
+}
+
+.tamanioDetalleInfoCuentas {
+    min-height: 145px;
+}
+
+.detalleInfoCuentas {
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+}
+
+.headerDetailGrid {
+    background: #005EB8 !important;
+    color: white !important;
+    text-align: center !important;
+    border-right: 2px solid white !important;
+    font-size: 17px !important;
+    font-family: Linotype-DINNextLTPro-Regular !important;
+}
+
+table[id^="gridDetalleSobregiro"] td {
+    /*border-right: initial !important;*/
+    border-right: none !important;
+}
+
+table[id^="gridDetalleSobregiro"] .customStyleCtaCteSobregiro {
+    border-right: solid 1px white !important;
+    border-bottom: solid 1px white !important;
+}
+
+tr[id^="gridDetalleSobregiro"][id*="_DXDRow"] > td {
+    padding: 0;
+}
+
+.headerComentario {
+    border-right: none !important;
+}
+
+.boxFirmas {
+    background: #F2F2F2;
+}
+
+.btn-firmas {
+    background: #009FDF;
+    color: white;
+    border-color: #009FDF;
+    border-radius: 10px;
+}
+
+/* Firmantes */
+.boxFirmas .dxpcLite_Office2010Blue {
+    top: -60px !important;
+}
+
+.dxtcFixed .dxtmImage {
+    width: 200px;
+    height: 60px;
+}
+
+.dxpc-header img {
+    background: url('../images/salir.svg') repeat-x left top;
+    width: 25px;
+    height: 25px;
+}
+
+.info-firmante {
+    font-family: Linotype-DINNextLTPro-Light !important;
+    font-size: 16px !important;
+    color: #009FDF;
+}
+
+.sin-firmante {
+    background-color: white;
+    height: 100px;
+}
+/**********FIN CUENTAS************/
+
+/*********** INI TC **************/
+/*ini tab vertical*/
+.scrollTabVerticalTC {
+    height: 507px;
+    overflow-y: auto;
+}
+    /* ini Scroll */
+    .scrollTabVerticalTC::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .scrollTabVerticalTC::-webkit-scrollbar-track {
+        -webkit-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        background: #dbdbe2;
+    }
+
+    .scrollTabVerticalTC::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        background: #c2c2ce;
+    }
+
+        .scrollTabVerticalTC::-webkit-scrollbar-thumb:hover {
+            background: #c2c2ce;
+        }
+/* fin Scroll */
+/*fin tab vertical*/
+
+.btnMenuTC {
+    background-color: transparent;
+}
+
+.imgbtnMenuTC {
+    height: 19.84px;
+    width: 5.18px;
+}
+
+.col-tc-cards {
+    -ms-flex: 0 0 21%;
+    flex: 0 0 21%;
+    max-width: 21%;
+}
+
+.col-tc-cardPagos {
+    -ms-flex: 0 0 47%;
+    flex: 0 0 47%;
+    max-width: 47%;
+}
+
+.col-tc-diferidos {
+    -ms-flex: 0 0 18.1%;
+    flex: 0 0 18.1%;
+    max-width: 18.1%;
+}
+
+.btn-tc-millas {
+    background: transparent;
+    color: #009FDF;
+    border-color: #009FDF;
+    border-radius: 14px;
+}
+/*********** FIN TC **************/
+
+/*********** INI TD **************/
+/*ini tab vertical*/
+.scrollTabVerticalTD {
+    height: 563px;
+    overflow-y: auto;
+}
+    /* ini Scroll */
+    .scrollTabVerticalTD::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .scrollTabVerticalTD::-webkit-scrollbar-track {
+        -webkit-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        background: #dbdbe2;
+    }
+
+    .scrollTabVerticalTD::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        background: #c2c2ce;
+    }
+
+        .scrollTabVerticalTD::-webkit-scrollbar-thumb:hover {
+            background: #c2c2ce;
+        }
+/* fin Scroll */
+/*fin tab vertical*/
+/*Estilos tabla tarjeta debito*/
+table.StyleTableTarjetaDebito td, table.StyleTableTarjetaDebito th {
+    padding: 0 0.5em;
+    text-align: center;
+    width: 115px;
+}
+
+table.StyleTableTarjetaDebito th {
+    font-family: Linotype-DINNextLTPro-Regular;
+    font-size: 16px;
+    color: #009FDF;
+    background-color: #BCE1F0;
+    font-weight: normal;
+}
+
+table.StyleTableTarjetaDebito td {
+    font-family: Linotype-DINNextLTPro-Light;
+    font-size: 15px;
+    color: #000000;
+    border: 1px solid #707070;
+}
+
+table.StyleTableTarjetaDebito {
+    line-height: 2em;
+    border-collapse: separate;
+    border-spacing: 1px;
+}
+
+.MarginTopTableCupos {
+    margin-top: 28px !important;
+}
+
+.AnchoTdTableReferencias {
+    width: 150px !important;
+}
+
+.mbCuposCajeroBco {
+    margin-bottom: 34px;
+}
+
+.stylefieldsetContorno fieldset {
+    border: 2px solid #E5E5E5;
+    margin: 0;
+    min-width: 0;
+    padding: 10px;
+    position: relative;
+    background-color: #FFFFFF;
+    padding-left: 10px !important;
+}
+
+.stylefieldsetContorno legend {
+    margin-bottom: 0px;
+    width: auto !important;
+    color: #009FDF;
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+    background-color: #FFFFFF;
+}
+/*********** FIN TD **************/
+
+/*********** INI INVERSIONES **************/
+.scrollTabVerticalInv {
+    height: 622px;
+    overflow-y: auto;
+}
+    /* ini Scroll */
+    .scrollTabVerticalInv::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .scrollTabVerticalInv::-webkit-scrollbar-track {
+        -webkit-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        background: #dbdbe2;
+    }
+
+    .scrollTabVerticalInv::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        background: #c2c2ce;
+    }
+
+        .scrollTabVerticalInv::-webkit-scrollbar-thumb:hover {
+            background: #c2c2ce;
+        }
+/* fin Scroll */
+/*********** FIN INVERSIONES **************/
+
+/*********** INI RECLAMOS **************/
+.my-RadioReclamos {
+    margin-top: -20px;
+    margin-bottom: 5px;
+}
+
+.scrollTabVerticalRec {
+    height: 760px;
+    overflow-y: auto;
+}
+    /* ini Scroll */
+    .scrollTabVerticalRec::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .scrollTabVerticalRec::-webkit-scrollbar-track {
+        -webkit-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        background: #dbdbe2;
+    }
+
+    .scrollTabVerticalRec::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        background: #c2c2ce;
+    }
+
+        .scrollTabVerticalRec::-webkit-scrollbar-thumb:hover {
+            background: #c2c2ce;
+        }
+/* fin Scroll */
+
+.stylefieldsetReclamos fieldset {
+    border-top: 1px solid #707372;
+    padding: 10px;
+    padding-left: 0px !important;
+}
+
+.stylefieldsetReclamos legend {
+    margin-bottom: 0px;
+    width: 17%;
+    color: #707372;
+    border-left: none;
+}
+
+.txtAreaReclamo {
+    padding: 10px;
+    border: 2px solid #E5E5E5;
+    width: 100%;
+    height: 150px;
+}
+
+.fondo-gris {
+    background-color: #E5E5E5;
+}
+
+#imgWarningReclamo {
+    width: 40px;
+    height: 40px;
+}
+
+.imgbtnCorreoImprimir {
+    width: 80%;
+}
+
+.btnMenuRec {
+    background-color: transparent;
+}
+
+.imgbtnMenuRec {
+    height: 30px;
+    width: 600px;
+}
+
+.frameAnexos {
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+/*********** FIN RECLAMOS **************/
+/*********** INI DEBITOS RECURRENTES **************/
+.tooltipNameDebRte {
+    position: relative;
+    display: inline-block;
+    line-height: 18px;
+}
+
+    .tooltipNameDebRte .tooltiptext {
+        visibility: hidden;
+        background-color: #C5C5C5;
+        color: black;
+        text-align: center;
+        border-radius: 6px;
+        padding: 4px 15px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 140%;
+        margin-right: -600px;
+        left: 0;
+    }
+
+        .tooltipNameDebRte .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 99%;
+            left: 8%;
+            margin-left: -5px;
+            border-width: 8px;
+            border-style: solid;
+            border-color: #C5C5C5 transparent transparent transparent;
+        }
+
+    .tooltipNameDebRte:hover .tooltiptext {
+        visibility: visible;
+    }
+
+.panelCardDebRecurrente {
+    border: none !important;
+}
+
+.pagerBottomPanelDebRte {
+    border: 1px solid #8ba0bc !important;
+}
+
+.cardDebitoRecurrente {
+    background-color: white !important;
+    border: 1px solid #DDDFE2 !important;
+    min-width: 250px;
+}
+
+.headerCardDebitoRte {
+    background-color: #F5F6F7;
+    border-bottom: 1px solid #DDDFE2;
+}
+
+.imgCardPanelDebito {
+    width: 50px;
+    height: 26px;
+}
+
+.contentImgEmpresa {
+    height: 260px;
+}
+
+.imgCardEmpresaDebRte {
+    width: 190px;
+    height: 120px;
+}
+
+.contentCardDebRte {
+    position: relative;
+}
+
+    .contentCardDebRte .infoContentCardDebRte {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+    }
+
+    .contentCardDebRte:hover .infoContentCardDebRte {
+        opacity: 1;
+        background-color: white;
+    }
+
+.btnVerHistorialDebitos {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+}
+
+    .btnVerHistorialDebitos div {
+        padding: 0 !important;
+    }
+/*********** FIN DEBITOS RECURRENTES **************/
+/*********** INICIO CANALES ************/
+.card-white {
+    background-color: white;
+    border: 1px solid rgba(0, 159, 223, 1) !important;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.Content-Lbl {
+    height: 30px;
+}
+
+.content-fch {
+    width: 160px;
+}
+
+.form-controlCanales {
+    display: block;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ffffff;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin: 0;
+    padding-left: 0px;
+}
+
+.lbl-PaddingButton {
+    padding-bottom: 10px;
+}
+
+.lTabVerticalRecCanales {
+    height: 0px;
+    overflow-y: no-display;
+}
+
+.pdng-btn {
+    padding-bottom: 20px;
+}
+/*********** FIN DE CANALES ************/
+/*********** INICIO GRUPO ECONOMICO ***********/
+
+.StyleGrupoEconomico {
+    left: 35px !important;
+    width: 425px;
+    border: 0px !important;
+}
+
+/*********** FIN GRUPO ECONOMICO ***********/
+
+.width160px {
+    width: 160px !important;
+}
+
+.heightCapFondos160px {
+    height: 140px !important;
+}
+
+.heightContent520px {
+    height: auto;
+}
+
+.heightContent165px {
+    height: 165px !important
+}
+
+.stepCarrucel-InfoCard {
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: url(../../Content/images/info.svg);
+    background-repeat: no-repeat;
+    /*background-size: 25px;*/
+    background-position: center;
+}
+
+
+
+
+.BorderRojo {
+    border-color: #d35555 !important;
+    border-style: Solid !important;
+    width: 100%;
+    border-width: 1px !important;
+}
+
+.BorderBlanco {
+    border-color: #ffffff !important;
+    border-style: Solid !important;
+    width: 100%;
+    border-width: 1px !important;
+}
+
+.lblColorBlanco {
+    color: #ffffff;
+    margin: 0px;
+}
+
+.lblColorAzul {
+    color: #126abd;
+    margin: 0px;
+}
+
+.ActiveCajaSimulacion {
+    border: 1px solid #78ccee;
+    background: #E7F3F8 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.CajaInversionesEnable {
+    border: 1px solid #78ccee;
+    background: #f2f0f0 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.ActiveHeaderCajaSimulacion {
+    display: flex;
+    align-items: center;
+    background-color: #E7F3F8;
+}
+
+.SeleccionadaHeaderCajaSimulacion {
+    display: flex;
+    align-items: center;
+    background-color: #005eb8;
+}
+
+.NoActiveHeaderCajaSimulacion {
+    display: flex;
+    align-items: center;
+    background-color: #f2f0f0;
+}
+
+.NoActiveCajaSimulacion {
+    border: 1px solid #78ccee;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.ContentContratacionInvercionProducto {
+    /*border: 1px solid #005EB8;*/
+    border-left: 0px;
+    background: #E7F3F8 0% 0% no-repeat padding-box;
+    max-width: 420px !important;
+    opacity: 1;
+}
+
+.ContenResumenContratacion {
+    /*border: 1px solid #005EB8;*/
+    border-left: 0px;
+    background: #E7F3F8 0% 0% no-repeat padding-box;
+    max-width: 325px !important;
+    opacity: 1;
+    height: 9rem !important;
+}
+
+.height100 {
+    height: 100% !important;
+}
+
+.height50 {
+    height: 50% !important;
+}
+
+.AsesorComercialRecogido {
+    display: flex;
+    padding-top: 11px;
+    margin: 0px 0px 0px 34px;
+    cursor: pointer;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: #ffffff !important;
+    color: #FFF !important;
+    text-decoration: none !important;
+}
+
+.owl-theme .owl-nav .disabled {
+    opacity: 1 !important;
+    cursor: default !important;
+}
+
+/*
+    @media (min-width: 768px) {
+
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+        display: block;
+    }
+
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item
+    ,.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item { 
+position: absolute;
+top: 0;
+right: -25%;
+z-index: -1;
+display: block;
+visibility: visible;
+}
+
+.active.carousel-item-left + .carousel-item-next.carousel-item-left,
+.carousel-item-next.carousel-item-left + .carousel-item,
+.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+}
+
+.carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+}
+
+.active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+.carousel-item-prev.carousel-item-right + .carousel-item,
+.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+}
+
+}
+
+    
+
+#profile-grid {
+    overflow: auto;
+    white-space: normal;
+}
+
+    #profile-grid .profile {
+        padding-bottom: 40px;
+    }
+
+    #profile-grid .panel {
+        padding: 0
+    }
+
+    #profile-grid .panel-body {
+        padding: 15px
+    }
+
+    #profile-grid .profile-name {
+        font-weight: bold;
+    }
+
+    #profile-grid .thumbnail {
+        margin-bottom: 6px;
+    }
+
+    #profile-grid .panel-thumbnail {
+        overflow: hidden;
+    }
+
+    #profile-grid .img-rounded {
+        border-radius: 4px 4px 0 0;
+    }
+
+
+
+.carousel-inner.vertical {
+    height: 100%; 
+}
+
+.carousel-inner.vertical > .item {
+    -webkit-transition: .6s ease-in-out top;
+    -o-transition: .6s ease-in-out top;
+    transition: .6s ease-in-out top;
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-inner.vertical > .item {
+        -webkit-transition: -webkit-transform .6s ease-in-out;
+        -o-transition: -o-transform .6s ease-in-out;
+        transition: transform .6s ease-in-out;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-perspective: 1000;
+        perspective: 1000;
+    }
+
+        .carousel-inner.vertical > .item.next,
+        .carousel-inner.vertical > .item.active.right {
+            -webkit-transform: translate3d(0, 33.33%, 0);
+            transform: translate3d(0, 33.33%, 0);
+            top: 0;
+        }
+
+        .carousel-inner.vertical > .item.prev,
+        .carousel-inner.vertical > .item.active.left {
+            -webkit-transform: translate3d(0, -33.33%, 0);
+            transform: translate3d(0, -33.33%, 0);
+            top: 0;
+        }
+
+            .carousel-inner.vertical > .item.next.left,
+            .carousel-inner.vertical > .item.prev.right,
+            .carousel-inner.vertical > .item.active {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+                top: 0;
+            }
+}
+
+.carousel-inner.vertical > .active {
+    top: 0;
+}
+
+.carousel-inner.vertical > .next,
+.carousel-inner.vertical > .prev {
+    top: 0;
+    height: 100%;
+    width: auto;
+}
+
+.carousel-inner.vertical > .next {
+    left: 0;
+    top: 33.33%;
+    right: 0;
+}
+
+.carousel-inner.vertical > .prev {
+    left: 0;
+    top: -33.33%;
+    right: 0;
+}
+
+    .carousel-inner.vertical > .next.left,
+    .carousel-inner.vertical > .prev.right {
+        top: 0;
+    }
+
+.carousel-inner.vertical > .active.left {
+    left: 0;
+    top: -33.33%;
+    right: 0;
+}
+
+.carousel-inner.vertical > .active.right {
+    left: 0;
+    top: 33.33%;
+    right: 0;
+}
+
+#carousel-pager .carousel-control.left {
+    bottom: initial;
+    width: 100%;
+}
+
+#carousel-pager .carousel-control.right {
+    top: initial;
+    width: 100%;
+}
+
+
+.sr-only-carousel {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+*/
+
+.mt-4,
+.my-4 {
+    margin-top: 1.5rem !important;
+}
+
+.mr-4,
+.mx-4 {
+    margin-right: 1.5rem !important;
+}
+
+.mb-4,
+.my-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mt-4,
+.my-4 {
+    margin-top: 1.5rem !important;
+}

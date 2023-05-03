@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.291 20.291">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #009fdf;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 13px;
+        font-family: DINNextLTPro-Medium, DIN Next LT Pro;
+        font-weight: 500;
+      }
+    </style>
+  </defs>
+  <g id="Group_925" data-name="Group 925" transform="translate(-169 -874)">
+    <g id="Group_77" data-name="Group 77" transform="translate(169 874)">
+      <circle id="Ellipse_20" data-name="Ellipse 20" class="cls-1" cx="10.146" cy="10.146" r="10.146" transform="translate(0)"/>
+    </g>
+    <text id="i" class="cls-2" transform="translate(179 888)"><tspan x="-1.677" y="0">i</tspan></text>
+  </g>
+</svg>

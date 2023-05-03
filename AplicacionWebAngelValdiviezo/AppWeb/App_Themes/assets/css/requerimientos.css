@@ -1,0 +1,79 @@
+﻿#busqueda-especifica{
+
+    margin-top: 5%;
+    margin-left: 2%;
+    
+}
+/*Estilos para buscador global de la página requerimiento*/
+.fa-spin {
+            animation: fa-spin 7s infinite linear !important;
+        }
+
+
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+/*
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}*/
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+
+#buscador-global{
+    margin-bottom: 7%;
+}
+
+ .ui-autocomplete-loading {
+            background: white url("images/ui-anim_basic_16x16.gif") right center no-repeat;
+        }
+
+        .ui-autocomplete {
+            cursor: pointer;
+            z-index: 99999999 !important;
+            max-height: 300px;
+            overflow-y: auto;
+            /* prevent horizontal scrollbar */
+            overflow-x: hidden;
+        }
+        .ui-autocomplete.ui-widget {
+              font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+              font-size: 14px;
+            }
+        .ui-autocomplete-category {
+            font-weight: bold;
+            padding: .2em .4em;
+            margin: .8em 0 .2em;
+            line-height: 1.5;
+        }
+
+        .ui-menu .ui-menu-item {
+            padding: 0em 1.5em;
+            width: 100%;
+            clear: both;
+        }
+
+        .ui-menu {
+            top: 205px;
+            left: 267px;
+        }
+/*icono de buscador */
+.searchinput {
+    width: 100%;
+}
+.searchclear {
+    position:absolute;
+    right:20px;
+    top:0;
+    bottom:0;
+    height:14px;
+    margin:auto;
+    font-size:14px;
+    cursor:pointer;
+    color:rgba(175, 141, 60, 0.91);
+}

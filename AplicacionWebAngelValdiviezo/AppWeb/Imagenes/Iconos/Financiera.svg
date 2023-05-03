@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.066 33.767">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 19px;
+        font-family: Helvetica;
+      }
+    </style>
+  </defs>
+  <g id="Symbol_67_84" data-name="Symbol 67 – 84" transform="translate(-870.041 -407.877)">
+    <g id="Group_330" data-name="Group 330" transform="translate(871.896 409.216) rotate(3)">
+      <path id="Path_399" data-name="Path 399" class="cls-1" d="M23.891,12.127S26.485-.62,12.662.027,1.023,8.425,0,12.249" transform="translate(4.422 0.001)"/>
+      <path id="Path_400" data-name="Path 400" class="cls-1" d="M0,.057,4.465,4.7,10.608,0" transform="translate(0.002 8.167)"/>
+    </g>
+    <g id="Group_331" data-name="Group 331" transform="matrix(0.999, 0.052, -0.052, 0.999, 876.858, 426.373)">
+      <path id="Path_399-2" data-name="Path 399" class="cls-1" d="M.191.127S-2.366,12.479,11.266,11.85,22.744,3.712,23.749.006" transform="translate(0 0.596)"/>
+      <path id="Path_400-2" data-name="Path 400" class="cls-1" d="M10.463,4.5,6.059,0,0,4.552" transform="translate(17.649 0.005)"/>
+    </g>
+    <text id="_" data-name="$" class="cls-2" transform="translate(882.307 431.371)"><tspan x="0" y="0">$</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,360 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs" Inherits="AppWeb.Principal" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="head1" runat="server">
+    <link href="Imagenes/Logos/ic_Iglesia_2.png" rel='shortcut icon' type='image/x-icon' />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Venta de entradas</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="App_Themes/Template/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="App_Themes/Template/bower_components/font-awesome/css/font-awesome.min.css" />
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="App_Themes/Template/bower_components/Ionicons/css/ionicons.min.css" />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="App_Themes/Template/dist/css/AdminLTE.min.css" />
+
+    <link rel="stylesheet" href="App_Themes/Template/dist/css/skins/skin-blue-light.min.css" />
+    <!-- animaciones de alerta notificaciones -->
+    <link rel="stylesheet" href="App_Themes/Template/dist/css/animate.min.css" />
+
+    <!-- Cuadros formularios -->
+    <link href="App_Themes/Template/dist/css/EstilosCuadros.css" rel="stylesheet" />
+
+    <!-- Fuentes de letras -->
+    <link href="App_Themes/Template/dist/css/FuentesLetras.css" rel="stylesheet" />
+
+
+    <link href="App_Themes/Template/dist/css/EstilosExtras.css" rel="stylesheet" />
+
+    <style type="text/css">
+        /*Se reescribe las clases de notificaciones*/
+        .alert-danger {
+            color: #a94442 !important;
+            background-color: #f2dede !important;
+            border-color: #ebccd1 !important;
+            opacity: 0.91 !important;
+        }
+
+        .alert-warning {
+            color: rgb(138, 109, 59) !important;
+            background-color: rgb(252, 248, 227) !important;
+            border-color: rgb(250, 235, 204) !important;
+            opacity: 0.91 !important;
+        }
+
+        .mGrid {
+            background: #c7e9fc none;
+        }
+
+        .alert-success {
+            color: #3c763d !important;
+            background-color: #dff0d8 !important;
+            border-color: #d6e9c6 !important;
+            opacity: 0.91 !important;
+        }
+
+        .alert-info {
+            color: #31708f !important;
+            background-color: #d9edf7 !important;
+            border-color: #bce8f1 !important;
+            opacity: 0.91 !important;
+        }
+        /*Clases Css Para los GridView*/
+        a.dxbButtonSys > span {
+            font-weight: bold !important;
+        }
+
+        .dxgvControl_Office2010Blue, .dxgvDisabled_Office2010Blue {
+            border: 1px solid #596768 !important; /*Border del grid */
+            background-color: #B6D8EF !important; /*fondo search panel*/
+        }
+
+        .dxeButtonEdit_Office2010Blue {
+            border: 1px solid #afb6b7 !important;
+        }
+
+        .dxgvHeader_Office2010Blue {
+            color: #000000 !important; /*Color de la Letra*/
+            font-weight: bold !important; /*Negrita de la letra cabecera*/
+            background: #B6D8EF !important; /*Background Cabecera #eef8fc*/
+        }
+
+            .dxgvHeader_Office2010Blue table {
+                color: rgba(49, 41, 32, 0.90);
+            }
+
+        .dxgvFocusedRow_Office2010Blue {
+            background: #c7e9fc none !important; /*Color del Focus Row del grid*/
+        }
+
+        .dxgvHeader_Office2010Blue {
+            border: 1px solid #596768; /*border del grid*/
+        }
+
+        .dxgvSearchPanel_Office2010Blue {
+            border-bottom: 1px solid #596768; /*border del grid*/
+        }
+
+        .dxgvDataRow_Office2010Blue td.dxgv {
+            border-bottom: 1px solid #dadada !important;
+            border-right: 1px solid #dadada !important;
+        }
+
+        .dxpcLite, .dxdpLite {
+            color: #3c8dbc;
+        }
+
+        .btn-success:hover {
+            background-color: #5a5a5a !important;
+        }
+        /*Colores para los tab de dev Express*/
+        .dxtcLite_Aqua > .dxtc-stripContainer .dxtc-activeTab, .dxtcLite_Aqua.dxtc-noSpacing > .dxtc-stripContainer .dxtc-activeTab {
+            border-right: 1px solid #AECAF0;
+            border-bottom: 1px solid #AECAF0;
+            border-left: 1px solid #AECAF0;
+            border-top: 3px solid #f6b5c4;
+        }
+        /*Hover de los tab*/
+        .dxtcLite_Aqua > .dxtc-stripContainer .dxtc-tabHover {
+            background: #d9edf5 repeat-x top !important;
+            border: 1px Solid #c3e6f5;
+        }
+
+        p {
+            height: 50%;
+            margin: -36px 40px 0px;
+            line-height: 14px;
+            font-size: 13px;
+        }
+
+        a:hover {
+            background-color: #7d7d7d !important;
+        }
+
+        .LetraColor {
+            color: white !important;
+        }
+
+        .Ancho {
+            width: 45px !important;
+        }
+
+        /*.sidebar {
+            background-color: gray !important;
+            color: black !important;
+        }*/
+
+        .linea {
+            margin-bottom: 3px !important;
+            border-left: 1px dashed #DCDCDC;
+            margin: 0 7.5px;
+        }
+
+        .EspacioRow {
+            padding-bottom: 5px;
+        }
+
+        .Alineacion {
+            align-content: initial !important;
+            color: #005EB8 !important;
+        }
+
+        .ocultar {
+            display: none;
+        }
+
+        .subrayar {
+            text-decoration: underline;
+        }
+
+        .labelColor {
+            color: #005EB8 !important;
+        }
+    </style>
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic" />
+    <script type="text/javascript">
+        function CambiandoFoto(s, e) {
+            cpGuardarFotoPerfil.PerformCallback();
+        }
+        function backcpCambioFotoPerfil(s, e) {
+            lpCargando.Hide();
+            if (e.result == '' && e.result == null) return;
+            var param = e.result.split('|');
+            if (param[1] == "Exitoso") {
+                /*$('#dvmessage').text('Foto de perfil modificada con éxito, de click para continuar...');
+                PopAlert.Show();*/
+                PopMensajes.SetContentHtml('Cargando...');
+                PanelMensajes.PerformCallback('Foto de perfil modificada con éxito, de click para continuar...');
+            }
+            if (param[1] == "Error") {
+                PopMensajes.SetContentHtml('Cargando...');
+                PanelMensajes.PerformCallback('Surgió un problema con la base de datos, de click para continuar...');
+                /*$('#dvmessage').text('Surgió un problema con la base de datos, de click para continuar...');
+                PopAlert.Show();*/
+            }
+            if (param[1] == "CierraSesion") {
+                PopMensajes.SetContentHtml('Cargando...');
+                PanelMensajes.PerformCallback('La sesión ha caducado, en unos momentos debe volver a iniciar sesión.');
+                setTimeout('EnviarALogin()', 9000); 
+            }
+        }
+        function EnviarALogin() {
+            window.locationf = "~/Inicio.aspx";
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="skin-blue-light  sidebar-mini hold-transition">
+    <div id="barra"></div>
+    <!-- jQuery 3 -->
+    <script src="<%= Page.ResolveClientUrl("~/App_Themes/Template/bower_components/jquery/dist/jquery.min.js") %>"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="<%=ResolveClientUrl("~/App_Themes/Template/bower_components/jquery-ui/jquery-ui.min.js")%>"></script>
+    
+    <form id="formMaster" runat="server">
+        <!-- jQuery 3 -->
+        <%--<script src="<%= Page.ResolveClientUrl("~/App_Themes/Template/bower_components/jquery/dist/jquery.min.js") %>"></script>--%>
+        <!-- jQuery UI 1.11.4 -->
+        <%--<script src="<%=ResolveClientUrl("~/App_Themes/Template/bower_components/jquery-ui/jquery-ui.min.js")%>"></script>--%>
+
+        <div class="wrapper">
+            <%--hold-transition skin-blue sidebar-mini--%>
+            <header class="main-header">
+               
+                <a href="<%=ResolveClientUrl("~/Inicio.aspx")%>" class="logo">
+                    <!-- mini logo for sidebar mini 50x50 pixels -->
+                    <span class="logo-mini">
+                        <b>
+                            <img src="<%=ResolveClientUrl("Imagenes/Logos/ic_Iglesia_2.png")%>" width="30" height="30" />
+                        </b>
+                    </span>
+                    <!-- logo for regular state and mobile devices -->
+                    <span class="logo-lg">
+                        <b>
+                            <img src="<%=ResolveClientUrl("Imagenes/Logos/ic_Iglesia_2.png")%>" width="30" height="30" />
+                        </b>
+                        <p>
+                            SISTEMA DE
+                            <br />
+                            VENTAS
+                        </p>
+                    </span>
+                </a>
+                
+
+                <!-- Header Navbar: style can be found in header.less -->
+                <div class="">
+                    <nav class="navbar navbar-static-top">
+                        <!-- Sidebar toggle button-->
+                        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                            <span class="sr-only">Toggle navigation</span>
+                        </a>
+                        <div class="navbar-custom-menu">
+                            <ul class="nav navbar-nav">
+                                <!-- User Account: style can be found in dropdown.less -->
+                                <li class="dropdown user user-menu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <img src="<%=ResolveClientUrl("~/App_Themes/Template/dist/img/avatar5.png")%>" class="user-image" alt="User Image" />
+                                        <span class="hidden-md">
+                                            <asp:Label ID="LblBienvenido" CssClass="LetraColor" runat="server" Text="Bienvenido(a): "></asp:Label></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <!-- User image -->
+                                        <li class="user-header" style="height: 175px;">
+                                            <div class="row">
+                                                <%--<dx:ASPxBinaryImage runat="server" ID="biFotoPerfilUser" Height="110px" ClientInstanceName="biFotoPerfilUser" ShowLoadingImage="true" LoadingImageUrl="~/Content/Loading.gif">
+                                                    <EditingSettings Enabled="true">
+                                                        <UploadSettings>
+                                                            <UploadValidationSettings MaxFileSize="4194304"></UploadValidationSettings>
+                                                        </UploadSettings>
+                                                    </EditingSettings>
+                                                    <ClientSideEvents ValueChanged="function(s,e){CambiandoFoto(s,e);}" />
+                                                </dx:ASPxBinaryImage>--%>
+                                            </div>
+                                            <br />
+                                            <br />
+                                            <div class="row">
+                                                <%--<img src="<%=ResolveClientUrl("~/App_Themes/Template/dist/img/avatar5.png") %>" class="img-circle" alt="User Image" />--%>
+                                                <p>
+                                                    <asp:Label ID="lblUsuario" runat="server" CssClass="LetraColor" Text=""></asp:Label>
+                                                </p>
+                                            </div>
+                                            <div class="row">
+                                                <p>
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar">
+                <!-- sidebar: style can be found in sidebar.less -->
+                <section class="sidebar">
+                        
+                    <ul>
+                        <li class="treeview">
+                            <a href="javascript:;">
+                                <span>Gestión de ventas</span>
+                                <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </section>
+            </aside>
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                <section class="content">
+                    <!-- Main row -->
+                    <div class="row">
+                        <!-- Left col -->
+                        <section class="col-lg-12 connectedSortable">
+                            <!-- Custom tabs (Charts with tabs)-->
+                            <div class="nav-tabs-custom">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+            <footer class="main-footer"></footer>
+            <div class="control-sidebar-bg"></div>
+
+
+            <div class="row ocultar" id="ContentProgressBar">
+            
+            </div>
+
+        </div>
+
+        <script>
+            $.widget.bridge('uibutton', $.ui.button);
+        </script>
+
+        <!-- Bootstrap 3.3.7 -->
+        <script src="<%=ResolveClientUrl("~/App_Themes/Template/bower_components/bootstrap/dist/js/bootstrap.min.js")%>"></script>
+        <script src="<%=ResolveClientUrl("~/App_Themes/Template/dist/js/bootstrap-notify.min.js")%>"></script>
+
+        <!-- AdminLTE App -->
+        <script src="<%=ResolveClientUrl("~/App_Themes/Template/dist/js/adminlte.min.js")%>"></script>
+        <%--<script src="<%=ResolveClientUrl("~/App_Themes/Template/dist/js/GestorReqGlobalFunctions.js")%>"></script>--%>
+
+    </form>
+
+</body>
+</html>

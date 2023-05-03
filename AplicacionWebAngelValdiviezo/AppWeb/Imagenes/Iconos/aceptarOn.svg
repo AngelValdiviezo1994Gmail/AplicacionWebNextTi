@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59.78 59.78">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #009fdf;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_1644" data-name="Group 1644" transform="translate(-1210 -807)">
+    <circle id="Ellipse_110" data-name="Ellipse 110" class="cls-1" cx="29.89" cy="29.89" r="29.89" transform="translate(1210 807)"/>
+    <path id="Checkbox" class="cls-2" d="M10.005,17.989,0,7.984l2.03-2.03,7.975,7.83L26.437-1.308l2,1.9Z" transform="translate(1226 828.308)"/>
+  </g>
+</svg>

@@ -1,0 +1,70 @@
+﻿.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+.cardVertical-card {
+    border-color: #DDDFE2;
+}
+
+.cardVertical-card-header {
+    background-color: #F5F6F7;
+    border-color: #DDDFE2;
+}
+
+.cardVertical-card-body {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.colorBasic {
+    color: #009FDF;
+}
+
+
+.contenedor-productos {
+    background-color: #F2F0F0;
+}
+
+
+.card-header-cargando {
+    background-color: #C5C5C5 !important;
+}
+
+.card-header-circle-cargando {
+    background-color: #C5C5C5 !important;
+    border: 1px solid #b2afaf !important;
+}
+
+
+.cardVertical-card-header {
+    background-color: #F5F6F7;
+    border-color: #DDDFE2;
+}
+
+.card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.bgColorBasic {
+    background-color: #009FDF;
+}
+
+
+.btnPointer {
+    cursor: pointer;
+}
+
+.text-white {
+    color: #fff !important;
+}
