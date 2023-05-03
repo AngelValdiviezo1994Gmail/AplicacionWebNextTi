@@ -244,6 +244,7 @@
         }
 
     </script>
+  
     <style type="text/css">
         .ocultar {
             display: none;
@@ -266,310 +267,109 @@
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolderMain" runat="server">
     <asp:HiddenField runat="server" ID="hf_RutaDocumento" Value="0"></asp:HiddenField>
-    <%--<dx:ASPxHiddenField runat="server" ID="HiddenField" ClientInstanceName="HiddenField"></dx:ASPxHiddenField>--%>
-    <div class="box box-info ocultar">
-
-        <div class="box-header with-border">
-            <h4 class="box-title" style="font-weight: 500;"><i class="fa fa-archive fa"></i>
-                <label>Perfil</label>
-            </h4>
-
-            <div class="box-tools pull-right">
-                <!-- Collapse Button -->
-                <button type="button" class="btn btn-box-tool" data-widget="collapse">
-                    <i class="fa fa-minus"></i>
-                </button>
-            </div>
-        </div>
     
-    </div>
-
     <div>
         <header class="navbar navbar-expand headerTop px-4 fixed-top">
-            <img src="../../../Imagenes/Iconos/flechita_izquier_Gris.svg" class="btn btn-previous ocultar" id="FlechaIzquierdaUno" style="height: 55px; width: 80px; padding: 0px; margin: 0px 0px 0px -26px;" />
-            <img src="../../../Imagenes/Iconos/flechita_izquier_Gris.svg" class="btn btn-previous ocultar" id="FlechaIzquierdaDos" style="height: 55px; width: 80px; padding: 0px; margin: 0px 0px 0px -26px;" />
-            <img src="../../Imagenes/Iconos/flechita_dere_Gris.svg" class="btn btnPointer" id="FlechaHistorial" style="height: 55px; width: 80px; padding: 0px; margin-left: 840px; margin-top: -1px;" />
-            <img src="../../Imagenes/Iconos/flechita_dere_Gris.svg" class="btn btnPointer ocultar" id="FlechaEnviaCorreo" style="height: 55px; width: 80px; padding: 0px; margin-left: 865px; margin-top: -80px;" />
+            
         </header>
         <div class="container-fluid mt-contenedorMain">
-            <div class="row" id="ContentDatosLider">
-                <div class="col-md-12" style="margin-left: -28px;">
-                    <div class="col-md-6">
-                        <div class="px-3 infoDatosCliente">
-                            <div class="row" style="margin-top: -38.10px;">
-                                <div id="clienteInfoPartial" class="col">
-                                    <div class="row mt-3" style="margin-top: 25px;">
-                                        <div class="col"></div>
-                                        <div class="col col-segmentacionCliente px-0" style="margin-left: 55px; margin-bottom: 15px;">
-                                            
-                                        </div>
-                                        <div class="col"></div>
-                                    </div>
-                                    <div id="seccionEditablePanelInfoBasicaCliente">
-                                        <div id="seccionPanelNombresCliente">
-                                            <div class="row">
-                                                <div class="col text-center" style="line-height: 16px;">
-                                                    
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col text-center" style="line-height: 16px;">
-                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row" style="margin-bottom: 20px;">
-                                            <div class="col text-center">
-                                                
-                                            </div>
-                                        </div>
-                                        <div id="seccionPanelEmailTelefonosLider">
-                                            <div class="row" style="margin-left: 35px;">
-                                                <img src="../../Imagenes/Iconos/emailPanelCliente.svg" class="imgLeftSmall-cel" />
-                                                <div class="tooltipMail lightDIN17">
-
-                                                </div>
-                                            </div>
-                                            <div class="row" style="margin-left: 35px;">
-                                                <img src="../../Imagenes/Iconos/celularPanelCliente.svg" class="imgLeftSmall-cel" />
-                                                <div class="tooltipMail lightDIN17">
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="col">
-                            <div class="row">
-                                <%--Poner menu--%>
-                            </div>
-                            <div class="row">
-                                <div class="col pt-1" style="margin-left: 330px; margin-top: -950px;">
-                                    <div id="mainly" class="loadmaincontent">
-                                        <div class="row my-4" style="margin-bottom: 50px;">
-                                            <div class="col infoGeneral">
-                                                <div class="bd-callout px-2 position-relative" style="padding-top: 6px; padding-bottom: 6px; display: flex; align-items: center; margin-bottom: 15px;">
-                                                    <h6 class="mb-0 colorBasic regularDIN20 d-inline-block" style="margin-left: 15px;">Información general</h6>
-                                                </div>
-                                                <div id="seccionInformacionGeneralCliente" style="margin-left: 15px;">
-                                                    <div class="row flex-wrap">
-                                                        <div class="col-4 mt-3" style="min-width: 501px;">
-                                                            <div class="card cardVertical-card">
-                                                                <div class="card-header colorBasic regularDIN21 cardVertical-card-header" style="padding-top: 10px; padding-bottom: 10px;">
-                                                                    Personal
-                                                                </div>
-                                                                <div class="card-body cardVertical-card-body px-5" style="margin-left: 35px;">
-                                                                    <div class="row">
-                                                                        <div class="col-md-12">
-                                                                            <div class="col-md-6">
-                                                                                <div class="row EspacioRow ocultar">
-                                                                                    <div class="col-md-4">
-                                                                                        <label class="control-label labelColor regularDIN15">Ciudad de nacimiento</label>
-                                                                                    </div>
-                                                                                    <div class="col-md-4">
-                                                                                        
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="row EspacioRow">
-                                                                                    <div class="col-md-4">
-                                                                                        <label class="control-label labelColor regularDIN15">Fecha de nacimiento</label>
-                                                                                    </div>
-                                                                                    <div class="col-md-4">
-                                                                                        
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-6">
-                                                                                <div class="row EspacioRow">
-                                                                                    <div class="col-md-4">
-                                                                                        <label class="control-label labelColor regularDIN15">Edad</label>
-                                                                                    </div>
-                                                                                    <div class="col-md-4">
-                                                                                        
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="row EspacioRow">
-                                                                                    <div class="col-md-4">
-                                                                                        <label class="control-label labelColor regularDIN15">Estado civil</label>
-                                                                                    </div>
-                                                                                    <div class="col-md-4">
-                                                                                        
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row my-4" style="margin-bottom: 50px;">
-                                            <div class="col infoDirecciones">
-                                                <div class="bd-callout px-2 position-relative" style="padding-top: 6px; padding-bottom: 6px; display: flex; align-items: center; margin-bottom: 15px;">
-                                                    <h6 class="mb-0 colorBasic regularDIN20 d-inline-block" style="margin-left: 15px;">Direcciones</h6>
-                                                </div>
-                                                <div id="seccionDireccionesCliente" style="margin-left: 15px;">
-                                                    <div class="row flex-wrap">
-                                                        <div class="col-4 mt-3" style="min-width: 501px;">
-                                                            <div class="card cardVertical-card">
-                                                                <div class="card-header colorBasic regularDIN21 cardVertical-card-header" style="padding-top: 10px; padding-bottom: 10px;">
-                                                                    Domicilio
-                                                                </div>
-                                                                <div class="card-body cardVertical-card-body px-5" style="margin-left: 35px;">
-                                                                    <div class="row">
-                                                                        <div class="row EspacioRow">
-                                                                            <div class="col-md-4">
-                                                                                <label class="control-label labelColor regularDIN15">Dirección</label>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row my-4" style="margin-bottom: 50px;">
-                                            <div class="col infoDirecciones">
-                                                <div class="bd-callout px-2 position-relative" style="padding-top: 6px; padding-bottom: 6px; display: flex; align-items: center; margin-bottom: 15px;">
-                                                    <h6 class="mb-0 colorBasic regularDIN20 d-inline-block" style="margin-left: 15px;">Iglesia a la que pertenece</h6>
-                                                </div>
-                                                <div id="seccionDatosIglesia" style="margin-left: 15px;">
-                                                    <div class="row flex-wrap">
-                                                        <div class="col-4 mt-3" style="min-width: 501px;">
-                                                            <div class="card cardVertical-card">
-                                                                <div class="card-header colorBasic regularDIN21 cardVertical-card-header" style="padding-top: 10px; padding-bottom: 10px;">
-                                                                    Iglesia
-                                                                </div>
-                                                                <div class="card-body cardVertical-card-body px-5" style="margin-left: 35px;">
-                                                                    <div class="row">
-                                                                        <div class="col-md-12">
-                                                                            <div class="col-md-6">
-                                                                                <div class="row EspacioRow">
-                                                                                    <div class="col-md-4">
-                                                                                        <label class="control-label labelColor regularDIN15">Nombre</label>
-                                                                                    </div>
-                                                                                    <div class="col-md-4">
-                                                                                        
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="row EspacioRow">
-                                                                                    <div class="col-md-4">
-                                                                                        <label class="control-label labelColor regularDIN15">Teléfono</label>
-                                                                                    </div>
-                                                                                    <div class="col-md-4">
-                                                                                        
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-6">
-                                                                                <div class="row EspacioRow">
-                                                                                    <div class="col-md-4">
-                                                                                        <label class="control-label labelColor regularDIN15">Dirección</label>
-                                                                                    </div>
-                                                                                    <div class="col-md-4">
-                                                                                        
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="row EspacioRow">
-                                                                                    <div class="col-md-4">
-                                                                                        <label class="control-label labelColor regularDIN15">Cantón</label>
-                                                                                    </div>
-                                                                                    <div class="col-md-4">
-                                                                                        
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row ocultar" id="ContentDatosHistorial">
-                <div class="col-md-12">
-                </div>
-
-            </div>
-            <div class="row ocultar" id="ContentDatosEnviaCorreo">
-               
-                <div class="col-xs-12" style="margin-top: 10px;">
-                    <div class="col-xs-6">
-                        <div class="row EspacioRow" style="margin-top: 10px;">
-                            <div class="col-xs-4">
-                                <label class="mediumDIN17 mb-0 labelColor">De:</label>
-                            </div>
-                            <div class="col-xs-3 linea">
+           <table>
+                                <tr><td>
+                                <%--<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id, Type" OnRowCancelingEdit="grdEventos_RowCancelingEdit" OnRowDataBound="grdEventos_RowDataBound" OnRowEditing="grdEventos_RowEditing" OnRowUpdating="grdEventos_RowUpdating" OnRowCommand="grdEventos_RowCommand" ShowFooter="True" OnRowDeleting="grdEventos_RowDeleting"> --%>
+                                <asp:GridView ID="grdEventos" runat="server" AutoGenerateColumns="False" OnRowCancelingEdit="grdEventos_RowCancelingEdit" OnRowDataBound="grdEventos_RowDataBound" OnRowEditing="grdEventos_RowEditing" OnRowUpdating="grdEventos_RowUpdating" OnRowCommand="grdEventos_RowCommand" ShowFooter="True" OnRowDeleting="grdEventos_RowDeleting"> 
+                                <Columns> 
+                                    <asp:TemplateField HeaderText="ID"  HeaderStyle-HorizontalAlign="Left"> 
+                                        <EditItemTemplate> 
+                                            <asp:Label ID="lblId" runat="server" Text='<%# Bind("Id") %>'></asp:Label>
+                                        </EditItemTemplate> 
+                                        <%--<ItemTemplate> 
+                                            <asp:Label ID="lblId" runat="server" Text='<%# Bind("Id") %>'></asp:Label> 
+                                        </ItemTemplate> --%>
+                                    </asp:TemplateField> 
                                 
-                            </div>
-                        </div>
-                        <div class="row EspacioRow" style="margin-top: 10px;">
-                            <div class="col-xs-4">
-                                <label class="mediumDIN17 mb-0 labelColor">Clave del correo:</label>
-                            </div>
-                            <div class="col-xs-3 linea">
-                               
-                            </div>
-                        </div>
-                        <div class="row EspacioRow" style="margin-top: 10px;">
-                            <div class="col-xs-4">
-                                <label class="mediumDIN17 mb-0 labelColor">Asunto:</label>
-                            </div>
-                            <div class="col-xs-3 linea">
-                               
-                            </div>
-                        </div>
-                        <div class="row EspacioRow" style="margin-top: 10px;">
-                            <div class="col-xs-4">
-                                <label class="mediumDIN17 mb-0 labelColor">Motivo:</label>
-                            </div>
-                            <div class="col-xs-3 linea">
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6">
-                        <div class="row EspacioRow" style="margin-top: 10px;">
-                            <div class="col-xs-2">
-                                <label class="mediumDIN17 mb-0 labelColor">Para:</label>
-                            </div>
-                            <div class="col-xs-3 linea">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                    <asp:TemplateField HeaderText="Fecha de evento" HeaderStyle-HorizontalAlign="Left"> 
+                                        <EditItemTemplate> 
+                                            <asp:TextBox ID="txtName" runat="server" Text='<%# Bind("Name") %>'></asp:TextBox> 
+                                        </EditItemTemplate> 
+                                        <FooterTemplate> 
+                                            <%--<asp:Calendar ID="dtFehcaEvento" runat="server"></asp:Calendar>
+                                            <DatePicker SelectedDate="2000-12-31"></DatePicker>--%>
+                                            <input type="date" style="width: 100px;" readonly="readonly" name="Date" id="Date" class="hasDatepicker"/>
+                                        </FooterTemplate> 
+                                        <%--<ItemTemplate> 
+                                            <asp:Label ID="lblName" runat="server" Text='<%# Bind("Name") %>'></asp:Label> 
+                                        </ItemTemplate> --%>
+                                    </asp:TemplateField> 
+                                    
+                                    <asp:TemplateField HeaderText="Lugar de evento" HeaderStyle-HorizontalAlign="Left"> 
+                                        <EditItemTemplate> 
+                                            <asp:TextBox ID="txtLugarEvento" runat="server" Text='<%# Bind("Name") %>'></asp:TextBox> 
+                                        </EditItemTemplate> 
+                                       <%-- <ItemTemplate> 
+                                            <asp:Label ID="lblSex" runat="server" Text='<%# Eval("Sex") %>'></asp:Label> 
+                                        </ItemTemplate> --%>
+                                        <FooterTemplate> 
+                                            <asp:TextBox ID="txtLugarEvento" runat="server" Text='<%# Bind("Name") %>'></asp:TextBox> 
+                                        </FooterTemplate> 
+                                    </asp:TemplateField>
 
-                <div class="row" style="margin-top: 300px;">
-                    <div class="box-footer" style="margin-left: 20px; margin-bottom: 10px;">
-                        <div style="margin-top: 0px; width: 90px; float: left; margin-left: 5px; margin-right: 20px;">
-                            <button class="btn btn-block btn-primary btn-sm" onclick="ContactarPersona();" style="margin-left: 10px;" type="button">
-                                <i aria-hidden="true" class="fa fa-paper-plane-o">&nbsp</i>Contactar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                    <asp:TemplateField HeaderText="# de entrada" HeaderStyle-HorizontalAlign="Left"> 
+                                        <EditItemTemplate> 
+                                            <asp:TextBox ID="txtNumeroEntrada" runat="server" Text='<%# Bind("Name") %>'></asp:TextBox> 
+                                        </EditItemTemplate> 
+                                        <%--<ItemTemplate> 
+                                            <asp:Label ID="lblType" runat="server" Text='<%# Eval("Type") %>'></asp:Label> 
+                                        </ItemTemplate> --%>
+                                        <FooterTemplate> 
+                                            <asp:TextBox ID="txtNumeroEntrada" runat="server" Text='<%# Bind("Name") %>'></asp:TextBox> 
+                                        </FooterTemplate> 
+                                    </asp:TemplateField> 
+
+                                    <asp:TemplateField HeaderText="Descripción de evento" HeaderStyle-HorizontalAlign="Left"> 
+                                        <EditItemTemplate> 
+                                            <asp:TextBox ID="txtNameEvento" runat="server" Text='<%# Bind("Name") %>'></asp:TextBox> 
+                                        </EditItemTemplate> 
+                                        <FooterTemplate> 
+                                            <asp:TextBox ID="txtNewName" runat="server" ></asp:TextBox> 
+                                        </FooterTemplate> 
+                                        <%--<ItemTemplate> 
+                                            <asp:Label ID="lblName" runat="server" Text='<%# Bind("Name") %>'></asp:Label> 
+                                        </ItemTemplate> --%>
+                                    </asp:TemplateField> 
+
+                                    <asp:TemplateField HeaderText="Precio" HeaderStyle-HorizontalAlign="Left"> 
+                                        <EditItemTemplate> 
+                                            <asp:TextBox ID="txtPrecio" runat="server" Text='<%# Bind("Name") %>'></asp:TextBox> 
+                                        </EditItemTemplate> 
+                                        <FooterTemplate> 
+                                            <asp:TextBox ID="txtPrecio" runat="server" ></asp:TextBox> 
+                                        </FooterTemplate> 
+                                        <%--<ItemTemplate> 
+                                            <asp:Label ID="lblName" runat="server" Text='<%# Bind("Name") %>'></asp:Label> 
+                                        </ItemTemplate> --%>
+                                    </asp:TemplateField> 
+                                    
+            
+                                    <asp:TemplateField HeaderText="Edit" ShowHeader="False" HeaderStyle-HorizontalAlign="Left"> 
+                                        <EditItemTemplate> 
+                                            <asp:LinkButton ID="lbkUpdate" runat="server" CausesValidation="True" CommandName="Update" Text="Update"></asp:LinkButton> 
+                                            <asp:LinkButton ID="lnkCancel" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel"></asp:LinkButton> 
+                                        </EditItemTemplate> 
+                                        <FooterTemplate> 
+                                            <asp:LinkButton ID="lnkAdd" runat="server" CausesValidation="False" CommandName="Insert" Text="Insert"></asp:LinkButton> 
+                                        </FooterTemplate> 
+                                        <%--<ItemTemplate> 
+                                            <asp:LinkButton ID="lnkEdit" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit"></asp:LinkButton> 
+                                        </ItemTemplate> --%>
+                                    </asp:TemplateField> 
+
+                                    <asp:CommandField HeaderText="Delete" ShowDeleteButton="True" ShowHeader="True" /> 
+                                </Columns> 
+                                </asp:GridView> 
+                                </td></tr>
+                              </table> 
+                  
+        
         </div>
     </div>
 

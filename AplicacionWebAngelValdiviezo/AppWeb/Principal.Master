@@ -309,7 +309,6 @@
                         <li class="treeview">
                             <a href="javascript:;">
                                 <span>Gestión de ventas</span>
-                                <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
                             </a>
                         </li>
 
@@ -332,6 +331,7 @@
                     </div>
                 </section>
             </div>
+            
             <footer class="main-footer"></footer>
             <div class="control-sidebar-bg"></div>
 
