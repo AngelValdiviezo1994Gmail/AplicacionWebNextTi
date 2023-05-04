@@ -1,5 +1,3 @@
-C:\Users\User\source\repos\AplicacionWeb\FrontEnd-Web\AplicacionWebNextTi\AplicacionWebAngelValdiviezo\AppWeb\obj\Debug\AppWeb.csproj.AssemblyReference.cache
-C:\Users\User\source\repos\AplicacionWeb\FrontEnd-Web\AplicacionWebNextTi\AplicacionWebAngelValdiviezo\AppWeb\obj\Debug\AppWeb.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\AplicacionWeb\FrontEnd-Web\AplicacionWebNextTi\AplicacionWebAngelValdiviezo\AppWeb\bin\AppWeb.dll.config
 C:\Users\User\source\repos\AplicacionWeb\FrontEnd-Web\AplicacionWebNextTi\AplicacionWebAngelValdiviezo\AppWeb\bin\AppWeb.dll
 C:\Users\User\source\repos\AplicacionWeb\FrontEnd-Web\AplicacionWebNextTi\AplicacionWebAngelValdiviezo\AppWeb\bin\AppWeb.pdb
@@ -53,7 +51,11 @@ C:\Users\User\source\repos\AplicacionWeb\FrontEnd-Web\AplicacionWebNextTi\Aplica
 C:\Users\User\source\repos\AplicacionWeb\FrontEnd-Web\AplicacionWebNextTi\AplicacionWebAngelValdiviezo\AppWeb\bin\roslyn\VBCSCompiler.exe
 C:\Users\User\source\repos\AplicacionWeb\FrontEnd-Web\AplicacionWebNextTi\AplicacionWebAngelValdiviezo\AppWeb\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\User\source\repos\AplicacionWeb\FrontEnd-Web\AplicacionWebNextTi\AplicacionWebAngelValdiviezo\AppWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\User\source\repos\AplicacionWeb\FrontEnd-Web\AplicacionWebNextTi\AplicacionWebAngelValdiviezo\AppWeb\bin\Newtonsoft.Json.dll
+C:\Users\User\source\repos\AplicacionWeb\FrontEnd-Web\AplicacionWebNextTi\AplicacionWebAngelValdiviezo\AppWeb\bin\Newtonsoft.Json.xml
 C:\Users\User\source\repos\AplicacionWeb\FrontEnd-Web\AplicacionWebNextTi\AplicacionWebAngelValdiviezo\AppWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\User\source\repos\AplicacionWeb\FrontEnd-Web\AplicacionWebNextTi\AplicacionWebAngelValdiviezo\AppWeb\obj\Debug\AppWeb.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\AplicacionWeb\FrontEnd-Web\AplicacionWebNextTi\AplicacionWebAngelValdiviezo\AppWeb\obj\Debug\AppWeb.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\AplicacionWeb\FrontEnd-Web\AplicacionWebNextTi\AplicacionWebAngelValdiviezo\AppWeb\obj\Debug\AppWeb.csproj.CopyComplete
 C:\Users\User\source\repos\AplicacionWeb\FrontEnd-Web\AplicacionWebNextTi\AplicacionWebAngelValdiviezo\AppWeb\obj\Debug\AppWeb.dll
 C:\Users\User\source\repos\AplicacionWeb\FrontEnd-Web\AplicacionWebNextTi\AplicacionWebAngelValdiviezo\AppWeb\obj\Debug\AppWeb.pdb

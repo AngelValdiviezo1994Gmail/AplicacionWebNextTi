@@ -272,95 +272,94 @@
         <header class="navbar navbar-expand headerTop px-4 fixed-top">
             
         </header>
+        <div class="col-xs-12">
+            <div class="col-xs-6">
+                <div class="row" style="margin-left:10px">
+                    <label>Evento:</label>
+                    <asp:DropDownList runat="server" ID="cmbEvento"></asp:DropDownList>
+                </div>
+                <div class="row" style="margin-left:10px">
+                    <div class="col-xs-1" style="margin-left: -15px">
+                        <label >Fecha:</label>
+                    </div>
+                    <div class="col-xs-3">
+                        <asp:Calendar runat="server" ID="calendarFecha"></asp:Calendar>
+                    </div>
+                    
+                    
+                    <%--<input type="text" value="9/23/2009" style="width: 100px;" name="Date" id="Date" class="hasDatepicker"/>--%>
+                </div>
+                <br />
+                <div class="row" style="margin-left:10px">
+                    <label>Lugar:</label>
+                    <asp:TextBox runat="server" ID="txtLugar"></asp:TextBox>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                
+                <div class="row" style="margin-left:10px">
+                    <label>Número de entrada:</label>
+                    <asp:TextBox runat="server" ID="txtNumEntrada" OnTextChanged="txtNumEntrada_TextChanged"></asp:TextBox>
+                </div>
+                <br />
+                <div class="row" style="margin-left:10px">
+                    <label>Descripcion:</label>
+                    <asp:TextBox runat="server" ID="txtDescripcion" OnTextChanged="txtDescripcion_TextChanged"></asp:TextBox>
+                </div>
+                <br />
+                <div class="row" style="margin-left:10px">
+                    <label>Precio:</label>
+                    <asp:TextBox runat="server" ID="txtPrecio" OnTextChanged="txtPrecio_TextChanged"></asp:TextBox>
+                </div>
+                <br />
+                <div class="row" style="margin-left:10px">
+                    <asp:Button Text="Guardar" runat="server"  ID="btnGuardar" OnClick="btnGuardar_Click"/>
+                    <asp:Label runat="server" ID="lblMensajeFinal" BorderColor="Green"></asp:Label>
+                </div>
+            </div>
+            
+            
+        </div>
+
+         <br />
+        
         <div class="container-fluid mt-contenedorMain">
            <table>
                                 <tr><td>
                                 <%--<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id, Type" OnRowCancelingEdit="grdEventos_RowCancelingEdit" OnRowDataBound="grdEventos_RowDataBound" OnRowEditing="grdEventos_RowEditing" OnRowUpdating="grdEventos_RowUpdating" OnRowCommand="grdEventos_RowCommand" ShowFooter="True" OnRowDeleting="grdEventos_RowDeleting"> --%>
-                                <asp:GridView ID="grdEventos" runat="server" AutoGenerateColumns="False" OnRowCancelingEdit="grdEventos_RowCancelingEdit" OnRowDataBound="grdEventos_RowDataBound" OnRowEditing="grdEventos_RowEditing" OnRowUpdating="grdEventos_RowUpdating" OnRowCommand="grdEventos_RowCommand" ShowFooter="True" OnRowDeleting="grdEventos_RowDeleting"> 
+                                <asp:GridView ID="grdVentaEntradas" runat="server" AutoGenerateColumns="False" DataKeyNames="idAcontecimiento" OnRowCancelingEdit="grdEventos_RowCancelingEdit" OnRowDataBound="grdEventos_RowDataBound" OnRowEditing="grdEventos_RowEditing" OnRowUpdating="grdEventos_RowUpdating" OnRowCommand="grdEventos_RowCommand" ShowFooter="True" OnRowDeleting="grdEventos_RowDeleting"> 
                                 <Columns> 
-                                    <asp:TemplateField HeaderText="ID"  HeaderStyle-HorizontalAlign="Left"> 
-                                        <EditItemTemplate> 
-                                            <asp:Label ID="lblId" runat="server" Text='<%# Bind("Id") %>'></asp:Label>
-                                        </EditItemTemplate> 
-                                        <%--<ItemTemplate> 
-                                            <asp:Label ID="lblId" runat="server" Text='<%# Bind("Id") %>'></asp:Label> 
-                                        </ItemTemplate> --%>
+
+                                    <asp:BoundField HeaderText="Id" DataField ="idAcontecimiento" />
+                                    <asp:BoundField HeaderText="Evento" DataField ="nombreEvento" />
+                                    <asp:BoundField HeaderText="Fecha" DataField ="Fecha" />
+                                    <asp:BoundField HeaderText="Lugar" DataField ="Lugar" />
+                                    <asp:BoundField HeaderText="Numero Entrada" DataField ="NumeroEntrada" />
+                                    <asp:BoundField HeaderText="Descripcion" DataField ="Descripcion" />
+                                    <asp:BoundField HeaderText="Precio" DataField ="Precio" />
+                                    <%--<asp:TemplateField HeaderText="ID" HeaderStyle-HorizontalAlign="Left">
+                                    </asp:TemplateField> 
+
+                                    <asp:TemplateField HeaderText="Evento"  HeaderStyle-HorizontalAlign="Left"> 
                                     </asp:TemplateField> 
                                 
-                                    <asp:TemplateField HeaderText="Fecha de evento" HeaderStyle-HorizontalAlign="Left"> 
-                                        <EditItemTemplate> 
-                                            <asp:TextBox ID="txtName" runat="server" Text='<%# Bind("Name") %>'></asp:TextBox> 
-                                        </EditItemTemplate> 
-                                        <FooterTemplate> 
-                                            <%--<asp:Calendar ID="dtFehcaEvento" runat="server"></asp:Calendar>
-                                            <DatePicker SelectedDate="2000-12-31"></DatePicker>--%>
-                                            <input type="date" style="width: 100px;" readonly="readonly" name="Date" id="Date" class="hasDatepicker"/>
-                                        </FooterTemplate> 
-                                        <%--<ItemTemplate> 
-                                            <asp:Label ID="lblName" runat="server" Text='<%# Bind("Name") %>'></asp:Label> 
-                                        </ItemTemplate> --%>
+                                    <asp:TemplateField HeaderText="Fecha de evento" HeaderStyle-HorizontalAlign="Left">
                                     </asp:TemplateField> 
                                     
-                                    <asp:TemplateField HeaderText="Lugar de evento" HeaderStyle-HorizontalAlign="Left"> 
-                                        <EditItemTemplate> 
-                                            <asp:TextBox ID="txtLugarEvento" runat="server" Text='<%# Bind("Name") %>'></asp:TextBox> 
-                                        </EditItemTemplate> 
-                                       <%-- <ItemTemplate> 
-                                            <asp:Label ID="lblSex" runat="server" Text='<%# Eval("Sex") %>'></asp:Label> 
-                                        </ItemTemplate> --%>
-                                        <FooterTemplate> 
-                                            <asp:TextBox ID="txtLugarEvento" runat="server" Text='<%# Bind("Name") %>'></asp:TextBox> 
-                                        </FooterTemplate> 
+                                    <asp:TemplateField HeaderText="Lugar de evento" HeaderStyle-HorizontalAlign="Left">
                                     </asp:TemplateField>
 
-                                    <asp:TemplateField HeaderText="# de entrada" HeaderStyle-HorizontalAlign="Left"> 
-                                        <EditItemTemplate> 
-                                            <asp:TextBox ID="txtNumeroEntrada" runat="server" Text='<%# Bind("Name") %>'></asp:TextBox> 
-                                        </EditItemTemplate> 
-                                        <%--<ItemTemplate> 
-                                            <asp:Label ID="lblType" runat="server" Text='<%# Eval("Type") %>'></asp:Label> 
-                                        </ItemTemplate> --%>
-                                        <FooterTemplate> 
-                                            <asp:TextBox ID="txtNumeroEntrada" runat="server" Text='<%# Bind("Name") %>'></asp:TextBox> 
-                                        </FooterTemplate> 
+                                    <asp:TemplateField HeaderText="# de entrada" HeaderStyle-HorizontalAlign="Left">
                                     </asp:TemplateField> 
 
-                                    <asp:TemplateField HeaderText="Descripción de evento" HeaderStyle-HorizontalAlign="Left"> 
-                                        <EditItemTemplate> 
-                                            <asp:TextBox ID="txtNameEvento" runat="server" Text='<%# Bind("Name") %>'></asp:TextBox> 
-                                        </EditItemTemplate> 
-                                        <FooterTemplate> 
-                                            <asp:TextBox ID="txtNewName" runat="server" ></asp:TextBox> 
-                                        </FooterTemplate> 
-                                        <%--<ItemTemplate> 
-                                            <asp:Label ID="lblName" runat="server" Text='<%# Bind("Name") %>'></asp:Label> 
-                                        </ItemTemplate> --%>
+                                    <asp:TemplateField HeaderText="Descripción de evento" HeaderStyle-HorizontalAlign="Left">
                                     </asp:TemplateField> 
 
-                                    <asp:TemplateField HeaderText="Precio" HeaderStyle-HorizontalAlign="Left"> 
-                                        <EditItemTemplate> 
-                                            <asp:TextBox ID="txtPrecio" runat="server" Text='<%# Bind("Name") %>'></asp:TextBox> 
-                                        </EditItemTemplate> 
-                                        <FooterTemplate> 
-                                            <asp:TextBox ID="txtPrecio" runat="server" ></asp:TextBox> 
-                                        </FooterTemplate> 
-                                        <%--<ItemTemplate> 
-                                            <asp:Label ID="lblName" runat="server" Text='<%# Bind("Name") %>'></asp:Label> 
-                                        </ItemTemplate> --%>
-                                    </asp:TemplateField> 
+                                    <asp:TemplateField HeaderText="Precio" HeaderStyle-HorizontalAlign="Left">
+                                    </asp:TemplateField> --%>
                                     
             
-                                    <asp:TemplateField HeaderText="Edit" ShowHeader="False" HeaderStyle-HorizontalAlign="Left"> 
-                                        <EditItemTemplate> 
-                                            <asp:LinkButton ID="lbkUpdate" runat="server" CausesValidation="True" CommandName="Update" Text="Update"></asp:LinkButton> 
-                                            <asp:LinkButton ID="lnkCancel" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel"></asp:LinkButton> 
-                                        </EditItemTemplate> 
-                                        <FooterTemplate> 
-                                            <asp:LinkButton ID="lnkAdd" runat="server" CausesValidation="False" CommandName="Insert" Text="Insert"></asp:LinkButton> 
-                                        </FooterTemplate> 
-                                        <%--<ItemTemplate> 
-                                            <asp:LinkButton ID="lnkEdit" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit"></asp:LinkButton> 
-                                        </ItemTemplate> --%>
+                                    <asp:TemplateField HeaderText="Edit" ShowHeader="False" HeaderStyle-HorizontalAlign="Left">
                                     </asp:TemplateField> 
 
                                     <asp:CommandField HeaderText="Delete" ShowDeleteButton="True" ShowHeader="True" /> 
